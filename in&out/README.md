@@ -131,7 +131,8 @@ a = [sys.stdin.readline() for i in range(n)]
 import sys
 
 for line in sys.stdin:          # 여러줄 입력 받을 때
-    print(line)
+    a, b = map(int, line.split())
+    print(a+b)
 ```
 #### 주의/참고 사항
 1. 재귀함수가 있는 경우 재귀 깊이를 설정해야 한다. (python3 의 경우 사용가능 / pypy에서는 사용 불가)
