@@ -123,8 +123,8 @@ n = int(input())
 import sys
 
 n = int(sys.stdin.readline())   # 한 줄 입력 받을 때
+# n = input()
 
-n = input()
 a = [sys.stdin.readline() for i in range(n)]
 ```
 ```python
