@@ -33,6 +33,7 @@
 - $ git fetch upstream : upstream 저장소에 있는 변경사항들을 로컬로 가져오면서 새로운 branch 생성
 - $ git checkout [master] : [내 브랜치] 로 현재 가리키는 branch 업데이트
 - $ git merge [upstream/master] : [upstream/branch]를 내 현재 branch 로 merge
+- $ git push [origin] [master] : 내 원격 repo로 push 해주면 끝
 
 2. PR (Pull Request)
 - 이렇게 upstream repository 와 동기화 한 내 레포를 upstream 레포로 PR을 보냄
