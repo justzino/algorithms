@@ -25,6 +25,7 @@ for _ in range(n):
     #         stack.append(c)
     #     elif c == ')' and stack.pop() == '(':
     #         pass
+    # ')))(((' 못하겠당...
     #     elif stack:
     #
     #
