@@ -1,3 +1,6 @@
+# unsolved...
+# 입력을 계속 받음,,,
+
 import sys
 
 input_line = sys.stdin.readline().rstrip()
@@ -34,5 +37,5 @@ for input_command in sys.stdin:
             input_line = input_line + input_command[2]
         input_line_cnt += 1
         cursor_idx += 1
-    
+
 print(input_line)
