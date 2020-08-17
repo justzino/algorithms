@@ -1,4 +1,4 @@
-# 런타임 에러
+# 런타임 에러 -> 해결
 import sys
 
 n = int(sys.stdin.readline())
@@ -8,16 +8,19 @@ seq = []
 idx = 0
 result = []
 for _ in range(n):
-    seq = int(sys.stdin.readline())
+    seq.append(int(sys.stdin.readline()))
 
 for i in range(1, n+1):
     stack.append(i)
     result.append('+')
 
-    while seq[idx] == stack[-1]:
-        stack.pop()
-        result.append('-')
-        idx += 1
+    while idx < n and stack:
+        if seq[idx] == stack[-1]:
+            stack.pop()
+            result.append('-')
+            idx += 1
+        else:
+            break
 
 if stack:
     print('NO')
