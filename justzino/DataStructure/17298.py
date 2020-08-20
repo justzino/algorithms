@@ -22,7 +22,7 @@ seq = list(map(int, sys.stdin.readline().split()))
 result = [-1 for _ in range(n)]
 stack = []
 
-for i in range(len(seq)):
+for i in range(n):
     try:
         while seq[stack[-1]] < seq[i]:
             result[stack.pop()] = seq[i]
