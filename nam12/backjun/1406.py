@@ -30,3 +30,6 @@ for i in range(N):
         leng += 1
 
 print(string)
+
+# P를 insert로 바꿔보기
+# B를 pop(x)로 해보기.

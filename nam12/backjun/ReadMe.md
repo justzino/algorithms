@@ -59,3 +59,14 @@ cur보다 작으면 찰 때까지 +(push)해주고, 도달하면 pop한다.
 1406 :
 
 왜 시간초과가 뜨지??
+
+====================================================
+1158 :
+
+for i in range(N): <= 가능  
+ queue.append(i)
+print(queue[i])
+
+for i in range(1, N+1): <= 불가능 list index out of range WHY?
+queue.append(i)
+print(queue[i])
