@@ -70,3 +70,5 @@ print(queue[i])
 for i in range(1, N+1): <= 불가능 list index out of range WHY?
 queue.append(i)
 print(queue[i])
+
+# ctrl + k + c....전체주석. ctrl + k + u
