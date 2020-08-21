@@ -21,36 +21,36 @@
 # 역순은 stack 특성을 이용하여 pop 시키면 될것 같다.
 # 파이썬에서 deque는 from collections import deque 를 이용한다.
 # 결론 : deque 특성 이용 안함. 그냥 역순으로 하는 부분만 stack이용하면 됨
-# from sys import stdin
-# from collections import deque
-#
-#
-# dq = deque()
-# dq_ext = dq.extend      # 속도 저하 방지
-# line = list(stdin.readline().rstrip())
-# n_line = len(line)
-# i = 0
-#
-# while i < n_line:
-#     if line[i] == '<':
-#         while dq:
-#             print(dq.pop(), end='')
-#         while line[i] != '>':
-#             print(line[i], end='')
-#             i += 1
-#         print(end='>')
-#         i += 1
-#     elif line[i] == ' ':
-#         while dq:
-#             print(dq.pop(), end='')
-#         print(end=' ')
-#         i += 1
-#     else:
-#         dq_ext(line[i])     # dq.extend(line[i])
-#         i += 1
-#
-# while dq:
-#     print(dq.pop(), end='')
+from sys import stdin
+from collections import deque
+
+
+dq = deque()
+dq_ext = dq.extend      # 속도 저하 방지
+line = list(stdin.readline().rstrip())
+n_line = len(line)
+i = 0
+
+while i < n_line:
+    if line[i] == '<':
+        while dq:
+            print(dq.pop(), end='')
+        while line[i] != '>':
+            print(line[i], end='')
+            i += 1
+        print(end='>')
+        i += 1
+    elif line[i] == ' ':
+        while dq:
+            print(dq.pop(), end='')
+        print(end=' ')
+        i += 1
+    else:
+        dq_ext(line[i])     # dq.extend(line[i])
+        i += 1
+
+while dq:
+    print(dq.pop(), end='')
 
 
 
