@@ -101,3 +101,51 @@ list(dq)[0:3] # ['p', 'y', 't']
 
 ## List Comprehension 에 대한 이해
 [list comprehension에 대한 이해](https://shoark7.github.io/programming/python/about-list-comprehension-python)  
+
+
+## dictionary 를 사용하는 여러가지 방식
+1935, 1918번 참고
+
+```python
+num = {}
+
+N = int(stdin.readline())
+exp = list(stdin.readline().rstrip())
+stack = []
+
+for i in range(N):
+    num[chr(65+i)] = int(stdin.readline())      # {'A' : 1}
+
+for c in exp:
+    if 64 < ord(c) < 91:
+        stack.append(num[c])
+```
+
+```python
+def priority(x):
+    if x == "*" or x == "/":
+        return 2
+    elif x == "+" or x == "-":
+        return 1
+    elif x == "(" or x == ")":
+        return 0
+
+    return -1
+```
+```python
+# 위의 방법을 dict를 이용하여 이렇게 choice_set으로 사용가능
+priority = {
+    '*': 2
+    '/': 2,
+    '+': 1,
+    '-': 1,
+    '(': 0
+}
+```
+
+## int 요소를 갖는 list -> 문자열 출력
+```python
+result = [1, 2, 3, 4]
+print(' '.join(map(str, result)))       # 이게 밑에거보다 느림
+print(' '.join([str(i) for i in result]))
+```
