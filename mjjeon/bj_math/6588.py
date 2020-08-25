@@ -10,7 +10,7 @@ for i, e in enumerate(seive):
             seive[k] = False
             k += i
 primes = [x for (x, y) in enumerate(seive) if y]
-primes = primes[1:] # 2 제외
+primes = primes[1:] # 2 제외 
 primes_bool = [False]*1000001 # index로 바로 찾게 하기 위해
 for i in primes:
     primes_bool[i] = True

@@ -3,4 +3,4 @@ words = []
 for i in range(len(word)):
     words.append(word[i:])
 
-print('\n'.join(sorted(words)))
+print('\n'.join(sorted(words))) 

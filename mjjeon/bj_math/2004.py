@@ -1,5 +1,5 @@
 # 2와 5의 개수를 찾는다.
-def getCount(multi, max):
+def getCount(multi, max): 
     num_cnt = 0
     div = multi
     while max >= div:
