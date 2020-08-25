@@ -8,3 +8,10 @@ https://www.acmicpc.net/source/16482942
 
 #### 10820 문자열 분석
 * 콘솔에서 디버깅 시 sys.stdin.readline() 사용 시 EOF 제대로 동작안하고, input() 으로 하니까 정상종료된다..
+
+#### 17298 오큰수
+* 인덱스를 스택에 넣는다는 것
+
+#### 10808 알파벳 개수
+* 파이썬에서의 asterisk 사용법 [https://mingrammer.com/understanding-the-asterisk-of-python/]
+
