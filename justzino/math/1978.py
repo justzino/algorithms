@@ -10,4 +10,4 @@ n_prime = 0
 
 for i in range(n):
     for j in range(x[i]):
-
+        
