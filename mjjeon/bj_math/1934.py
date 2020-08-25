@@ -1,6 +1,6 @@
 import sys
 
-def GCM(a, b):
+def GCM(a, b): 
     if a%b == 0:
         return b
     else:

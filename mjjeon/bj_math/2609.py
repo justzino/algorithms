@@ -1,5 +1,5 @@
 
-def GCD(a, b):
+def GCD(a, b): 
     if a%b == 0:
         return b
     else:

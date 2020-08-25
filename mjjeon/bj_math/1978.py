@@ -3,7 +3,7 @@ import sys
 def checkPrime(num):
     is_prime = True
     i = 2
-    if num < 2:
+    if num < 2: 
         return False
         
     while i*i <= num:

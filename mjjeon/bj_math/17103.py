@@ -13,7 +13,7 @@ primes = []
 for i, e in enumerate(seive):
     if e:
         primes.append(i)
-primes_bool = [False] * (1000000 + 1)
+primes_bool = [False] * (1000000 + 1) 
 for i in primes:
     primes_bool[i] = True
 

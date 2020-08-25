@@ -1,4 +1,4 @@
-number = int(input())
+number = int(input()) 
 result = ''
 quot = number
 if number == 0:

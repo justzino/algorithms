@@ -1,4 +1,4 @@
-import sys
+import sys 
 
 def checkPrime(num):
     is_prime = True
