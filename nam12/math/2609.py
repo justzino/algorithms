@@ -9,11 +9,11 @@ def gcd(a, b):
     return a
 
 
-def gccd(a, b):
+def lcm(a, b):
     return int((a*b)/gcd(a, b))
 
 
 A, B = map(int, sys.stdin.readline().rstrip().split())
 
 print(gcd(A, B))
-print(gccd(A, B))
+print(lcm(A, B))
