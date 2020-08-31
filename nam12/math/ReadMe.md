@@ -27,4 +27,7 @@ for _ in range(int(input())):
 for e in list(combinations(arr[1:],2)):
     if e[0] > e[1]: #nCm 에서 n > m 을 나타낸 것이다. -->
 
-https://python.flowdas.com/library/itertools.html 에서 iterator들 확인해보기!
+# https://python.flowdas.com/library/itertools.html 에서 iterator들 확인해보기!
+
+모든 진법 변환
+https://velog.io/@hyeon930/%EC%A7%84%EB%B2%95-%EB%B3%80%ED%99%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98 참고
