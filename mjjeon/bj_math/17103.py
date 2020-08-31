@@ -20,8 +20,20 @@ for i in primes:
 for i in range(cnt):
     result = 0
     value = int(sys.stdin.readline())
-    for i in range(int(value/2) + 1):
-        if primes_bool[value - primes[i]] == True:
-            result += 1
-    result = result if result <= 1 else int(round(result/2))
+    for i in range(int(value/2)+1): 
+        if primes[i] <= value - primes[i]: # 런타임 에러 수정
+            if primes_bool[value - primes[i]] == True:
+                result += 1
+        else:
+            break
     print(result)
+
+
+# for i in range(cnt):
+#     result = 0
+#     value = int(sys.stdin.readline())
+#     for i in range(int(value/2) + 1): # for 문에서 런타임 에러나는 듯
+#         if primes_bool[value - primes[i]] == True:
+#             result += 1
+#     result = result if result <= 1 else int(round(result/2))
+#     print(result)

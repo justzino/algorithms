@@ -149,3 +149,22 @@ result = [1, 2, 3, 4]
 print(' '.join(map(str, result)))       # 이게 밑에거보다 느림
 print(' '.join([str(i) for i in result]))
 ```
+
+## asterisk(*)
+10808 번
+(asterisk list)[https://mingrammer.com/understanding-the-asterisk-of-python/]
+```python
+print(' '.join(map(str, result)))
+print(*result)
+```
+
+
+## 문자 함수
+10820
+```python
+        if c.islower():         # 'a' <= c <= 'z'
+            result[0] += 1
+        elif c.isupper():       # 'A' <= c <= 'Z'
+            result[1] += 1
+        elif c.isdigit():       # '0' <= c <= '9' 
+```
