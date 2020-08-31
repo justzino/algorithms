@@ -23,7 +23,7 @@ for line in sys.stdin:
         break
     for i in range(3, n // 2 + 1, 2):      # 시간 단축 2
         # if n-i in primes:
-        if primes_bool[n-i]:
+        if primes_bool[n-i] and primes_bool[i]:
             print('{} = {} + {}'. format(n, i, n-i))
             break
         if i >= n-1:
