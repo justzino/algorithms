@@ -21,8 +21,11 @@ for line in sys.stdin:
     N = int(line)
     numCase = 0
 
-    for i in range(3, N // 2 + 1, 2):      # 시간 단축 2
-        # if n-i in primes:
-        if primes_bool[N-i] and primes_bool[i]:
-            numCase += 1
+    if N == 4:      # 유일한 예외 경우 : 4 = 2 + 2
+        numCase = 1
+    else:
+        for i in range(3, N // 2 + 1, 2):      # 시간 단축 2
+            # if n-i in primes:
+            if primes_bool[N-i] and primes_bool[i]:
+                numCase += 1
     print(numCase)
