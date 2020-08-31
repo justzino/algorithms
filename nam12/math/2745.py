@@ -5,6 +5,7 @@
 # B = int(B)
 # ans = 0
 
+
 # for i in range(len(N)-1, -1, -1):
 #     if N[i].isupper():
 #         ans += (ord(N[i])-55)*(B**i)
@@ -12,7 +13,6 @@
 #         ans += int(N[i])
 # print(str(ans))
 
-# import sys
 
 # N, B = sys.stdin.readline().rstrip().split()
 # B = int(B)
@@ -28,7 +28,6 @@
 #     i += 1
 # print(ans)
 
-# import sys
 
 # dict2 = {
 #     '0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
@@ -47,16 +46,15 @@
 
 # print(ans)
 # enumerate를 써서 index와 key값이 동시에 나오게 가능.
-# 그리고 key=> value를 얻을 수 있다.
+# 그리고 key = > value를 얻을 수 있다.
 
-import sys
 
-before, base = sys.stdin.readline().split()
-base = int(base)
-cnt, res = 0, 0
-for c in before[::-1]:
-    target = int(c) if c.isdigit() else ord(c) - 55
-    res += (target * (base**cnt))
-    cnt += 1
-sys.stdout.write(str(res))
+# before, base = sys.stdin.readline().split()
+# base = int(base)
+# cnt, res = 0, 0
+# for c in before[::-1]:
+#     target = int(c) if c.isdigit() else ord(c) - 55
+#     res += (target * (base**cnt))
+#     cnt += 1
+# sys.stdout.write(str(res))
 # testing code

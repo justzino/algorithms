@@ -1,3 +1,4 @@
+# import sys
 # from sys import stdin
 
 
@@ -6,13 +7,13 @@
 # N, S = map(int, input)
 
 # arr = list(map(int, input))
+
 # arr2 = list(map(int, (stdin.readline().rstrip().split())))
 
 # print(N, S, arr, arr2)
 
 # 이렇게 입력하면 왜 3 3 [3, 3] [1, 7, 17]로 입력이 되지??
 
-# import sys
 
 # N, S = map(int, sys.stdin.readline().rstrip().split())
 
@@ -25,7 +26,7 @@
 # max_distance = 1
 # d = 1
 
-# while (d <= min(abs(first - S), abs(first - S))):
+# while (d <= min(abs(first - S), abs(last - S))):
 #     cnt = 0
 
 #     for i in range(S, first-1, -d):  # 왼쪽으로

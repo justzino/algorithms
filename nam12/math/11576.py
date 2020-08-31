@@ -23,4 +23,4 @@ while sum:
         sum //= B
 
 for i in ans[::-1]:
-    print(i, end="")
+    print(i, end=" ")

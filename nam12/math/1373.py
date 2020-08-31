@@ -11,9 +11,11 @@
 
 # print(format(sum, 'o'))
 
-# 2-> 10 -> 8 진수로 바꾸니 시간초과뜸.
+# 2 -> 10 -> 8 진수로 바꾸니 시간초과뜸.
+
 
 # x = int(input(), 2)
 # print(format(x, 'o'))
 
-# print(oct(int(input(), 2))[2:])
+
+print(oct(int(input(), 2))[2:])
