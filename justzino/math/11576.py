@@ -1,9 +1,10 @@
 # a진법 -> b진법
 def notation(num, n, a, b):
     tmp, result = 0, []
-
+    # a->10
     for i in range(num):
         tmp += (n.pop() * (a ** i))
+
     while tmp >= b:
         remainder = tmp % b
         tmp = tmp // b

@@ -1,4 +1,4 @@
-# n진법 -> 10진법
+# n진법 -> 10진법(int)
 def notation(num, n):
     n_set = {chr(ord('A')+i-10): i for i in range(10, n)}      # {'A': 10, 'B': 11, 'C': 12, 'D': 13, ...}
     result = 0
