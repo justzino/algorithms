@@ -14,17 +14,15 @@ def get_prime_bool(max):
 def get_prime_num(max):
     sieve = get_prime_bool(max)
     max_root = int(max ** 0.5)
-    nums = []
-    for i in range(2, max_root + 1):
-        if sieve[i]:
-            nums.append(i)
-    return nums
 
+    return [i for i in range(2, max_root + 1) if sieve[i]]
+
+
+n = int(input())
+root_n = int(n ** 0.5)
 
 primes = get_prime_num(10000000)
 
-n = int(input())
-root_n = n ** 0.5
 for p in primes:
     if p > root_n and n > 1:
         print(n)
