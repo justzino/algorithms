@@ -12,7 +12,7 @@ print(sum(D[N])%1000000000)
 
 
 
-# 참고, 조금 변형함.: https://sihyungyou.github.io/baekjoon-10844/
+# 참고, 조금 변형함.: https://mygumi.tistory.com/260, https://sihyungyou.github.io/baekjoon-10844/
 
 # 틀렸습니다
 # N = int(input())
