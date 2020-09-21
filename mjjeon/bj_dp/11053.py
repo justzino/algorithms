@@ -19,7 +19,7 @@ print(max(cnt))
 # cnt = [0] * N
 # cnt[0] = 1
 # for i in range(N):
-#     for j in range(i+1):
+#     for j in range(i):
 #         if A[i] > A[j]:
 #             cnt[i] = max(cnt[i], cnt[j] + 1)
 
