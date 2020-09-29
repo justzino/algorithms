@@ -14,5 +14,5 @@ for i in range(N):
             dp[i][j] = dp[i][i] + 1
             dp[j][j] = max(dp[i][j], dp[j][j])      # dp[j][j] 에 가장 큰 수 저장
 
-longest_seq_len += 1
+longest_seq_len += 1        # 자기자신도 1 (즉, 초기값 1)
 print(longest_seq_len)
