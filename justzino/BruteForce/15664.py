@@ -7,7 +7,7 @@ result = list()
 
 def dfs(cnt):
     if cnt == M:
-        results.append(result.copy())
+        results.append(tuple(result))
         return
 
     for i in range(N):
@@ -23,7 +23,7 @@ def dfs(cnt):
 
 
 dfs(0)
-remove_dup_results = list(set(map(tuple, results)))
+remove_dup_results = list(set(results))
 remove_dup_results.sort()
 for result in remove_dup_results:
     print(*result)
