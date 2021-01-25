@@ -1,26 +1,26 @@
-from itertools import permutations
-
 N = int(input())
-point_num = list(map(int, input().split()))
+s = list(map(int, input().split()))
 
 
-def func(cnt):
-    seqs = list(permutations([i for i in range(1, N + 1)], N))
-    flag = 0
+def next_permutation(seq):
+    n = len(seq)-1
+    for i in range(n, 0, -1):
+        if seq[i-1] >= seq[i]:
+            continue
 
-    for seq in seqs:
-        if flag == 1:
+        for j in range(n, i-1, -1):
+            if i-1 >= j:
+                break
+            if seq[i-1] >= seq[j]:
+                continue
+            seq[i-1], seq[j] = seq[j], seq[i-1]
+            a, b = seq[:i], seq[i:]
+            b.sort()
+            seq = a + b
             print(*seq)
             return
 
-        if cnt == N:
-            print('-1')
-            return
-
-        if point_num != list(seq):
-            cnt += 1
-            continue
-        flag = 1
+    print(-1)
 
 
-func(0)
+next_permutation(s)
