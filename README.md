@@ -1,14 +1,7 @@
 # 알고리즘 스터디
-테스팅중...
-- 참가자: [Jinho Lee](https://github.com/justzino), [Minjeong Jeon](https://github.com/ummjevel)
+- 참가자: [Jinho Lee](https://github.com/justzino), [Minjeong Jeon](https://github.com/ummjevel) [Namil Kim](https://github.com/simyeen)
 - 커리큘럼: [백준](https://code.plus/course/41), [블로그](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0) 문제
-- 제출방법: GitHub 이용. 메인 Repository, 각자 Branch 생성
-- 모임: 주 2회(월, 금 오후 2시)
-- 패널티:  
-불참 - 1000원 (이유 불문- 교통사고 나도 지불)  
-문제당 - 100원
-- 리뷰: 모임 때... 
-- 회고: 각자
+
 
 ## 기초알고리즘
 쉬운 것도 무시하지 말고 기초부터 다시.
@@ -47,22 +40,3 @@
 - 기한: 9/21(월) ~ 9/28(월)
 - 진도 : [DP1](https://code.plus/course/41)
 - dp1 : 1932, 11055, 11722, 11054, 13398, 2133, 1309, 17404, 2225
-
-
-#### 협업용 깃헙 정리
-[협업 과정](https://gmlwjd9405.github.io/2018/05/12/how-to-collaborate-on-GitHub-3.html), [오리지널 저장소의 변경 내역 최신화 하기 - fetch, pull, merge](https://playinlion.tistory.com/29),
- [참고](http://www.notforme.kr/archives/1631), [원격 저장소 branch 확인](https://junwoo45.github.io/2019-07-16-git_remote_branch/)
-1. upstream 에 대한 이해
-- $ git remote add upstream [https://github.com/ummjevel/algorithm.git] : upstream [주소] remote
-- $ git branch -r : -r 붙이면 원격 저장소의 branch list 확인
-- $ git remote -v
-- $ git fetch upstream : upstream 저장소에 있는 변경사항들을 로컬로 가져오면서 새로운 branch 생성
-- $ git checkout [master] : [내 브랜치] 로 현재 가리키는 branch 업데이트
-- $ git merge [upstream/master] : [upstream/branch]를 내 현재 branch 로 merge
-- $ git push [origin] [master] : 내 원격 repo로 push 해주면 끝
-
-2. PR (Pull Request)
-- 이렇게 upstream repository 와 동기화 한 내 레포를 upstream 레포로 PR을 보냄
-- upstream에서 conflict가 없을시 PR 승인
-- 다른 협업자들은 본인의 변경사항으로 PR하기 전에 다시 1.의 과정을 통해 본인의 레포를 upstream의 레포와 동기화 한후 PR
- 
