@@ -1,42 +1,452 @@
 # 알고리즘 스터디
+
 - 참가자: [Jinho Lee](https://github.com/justzino), [Minjeong Jeon](https://github.com/ummjevel) [Namil Kim](https://github.com/simyeen)
 - 커리큘럼: [백준](https://code.plus/course/41), [블로그](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0) 문제
 
-
 ## 기초알고리즘
+
 쉬운 것도 무시하지 말고 기초부터 다시.
 
-### 1 회차
-- 기한: 8/3(월) ~ 8/10(월) 
-- 진도: [입출력](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
-- 입출력 : 2557, 1000, 2558, 10950, 10951, 10952, 10953, 11021, 11022, 11718, 11719, 11720, 11721, 2741, 2742, 2739, 1924, 8393, 10818, 2438, 2439, 2440, 2441, 2442, 2445, 2522, 2446, 10991, 10992
+## 📅 문제 기록 
 
-### 2 회차
-- 기한: 8/10(월) ~ 8/17(월)
-- 진도 : [자료구조1](https://code.plus/course/41)
-- 자료구조1 : 10828, 9093, 9012, 1874, 1406, 10845, 1158, 10866, 17413, 10799
+|             |                                   1                                   |                                2                                |                                  3                                  |                                  4                                  |                                  5                                  |
+| :---------: | :-------------------------------------------------------------------: | :-------------------------------------------------------------: | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: |
+|   입출력    |          [Hello World](https://www.acmicpc.net/problem/2557)          |           [A+B](https://www.acmicpc.net/problem/1000)           |           [A+B - 2](https://www.acmicpc.net/problem/2558)           |          [A+B - 3](https://www.acmicpc.net/problem/10950)           |          [A+B - 4](https://www.acmicpc.net/problem/10951)           |
+|             |           [A+B - 5](https://www.acmicpc.net/problem/10952)            |        [A+B - 6](https://www.acmicpc.net/problem/10953)         |          [A+B - 7](https://www.acmicpc.net/problem/11021)           |          [A+B - 8](https://www.acmicpc.net/problem/11022)           |      [그대로 출력하기](https://www.acmicpc.net/problem/11718)       |
+|             |      [그대로 출력하기 2](https://www.acmicpc.net/problem/11719)       |       [숫자의 합](https://www.acmicpc.net/problem/11720)        |   [열 개씩 끊어 출력하기](https://www.acmicpc.net/problem/11721)    |           [N 찍기](https://www.acmicpc.net/problem/2741)            |           [기찍 N](https://www.acmicpc.net/problem/2742)            |
+|             |            [구구단](https://www.acmicpc.net/problem/2739)             |         [2007년](https://www.acmicpc.net/problem/1924)          |             [합](https://www.acmicpc.net/problem/8393)              |         [최소, 최대](https://www.acmicpc.net/problem/10818)         |         [별 찍기 - 1](https://www.acmicpc.net/problem/2438)         |
+|             |          [별 찍기 - 2](https://www.acmicpc.net/problem/2439)          |       [별 찍기 - 3](https://www.acmicpc.net/problem/2440)       |         [별 찍기 - 4](https://www.acmicpc.net/problem/2441)         |         [별 찍기 - 5](https://www.acmicpc.net/problem/2442)         |         [별 찍기 - 8](https://www.acmicpc.net/problem/2445)         |
+|             |          [별 찍기 - 9](https://www.acmicpc.net/problem/2522)          |      [별 찍기 - 12](https://www.acmicpc.net/problem/2446)       |        [별 찍기 - 16](https://www.acmicpc.net/problem/10991)        |        [별 찍기 - 17](https://www.acmicpc.net/problem/10992)        |
+|             |
+|  자료구조   |             [스택](https://www.acmicpc.net/problem/10828)             |       [단어 뒤집기](https://www.acmicpc.net/problem/9093)       |            [괄호](https://www.acmicpc.net/problem/9012)             |          [스택 수열](https://www.acmicpc.net/problem/1874)          |           [에디터](https://www.acmicpc.net/problem/1406)            |
+|             |              [큐](https://www.acmicpc.net/problem/10845)              |      [조세퍼스 문제](https://www.acmicpc.net/problem/1158)      |             [덱](https://www.acmicpc.net/problem/10866)             |       [단어 뒤집기 2](https://www.acmicpc.net/problem/17413)        |          [쇠막대기](https://www.acmicpc.net/problem/10799)          |
+|             |            [오큰수](https://www.acmicpc.net/problem/17298)            |        [오등큰수](https://www.acmicpc.net/problem/17299)        |        [후위 표기식2](https://www.acmicpc.net/problem/1935)         |         [후위 표기식](https://www.acmicpc.net/problem/1918)         |        [알파벳 개수](https://www.acmicpc.net/problem/10808)         |
+|             |         [알파벳 찾기](https://www.acmicpc.net/problem/10809)          |      [문자열 분석](https://www.acmicpc.net/problem/10820)       |       [단어 길이 재기](https://www.acmicpc.net/problem/2743)        |           [ROT13](https://www.acmicpc.net/problem/11655)            |           [네 수](https://www.acmicpc.net/problem/10824)            |
+|             |         [접미사 배열](https://www.acmicpc.net/problem/11656)          |
+|             |
+|    수학     |            [나머지](https://www.acmicpc.net/problem/10430)            | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609) |         [최소공배수](https://www.acmicpc.net/problem/1934)          |          [소수 찾기](https://www.acmicpc.net/problem/1978)          |         [소수 구하기](https://www.acmicpc.net/problem/1929)         |
+|             |        [골드바흐의 추측](https://www.acmicpc.net/problem/6588)        |        [팩토리얼](https://www.acmicpc.net/problem/10872)        |      [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)      |        [조합 0의 개수](https://www.acmicpc.net/problem/2004)        |           [GCD 합](https://www.acmicpc.net/problem/9613)            |
+|             |          [숨바꼭질 6](https://www.acmicpc.net/problem/17087)          |       [2진수 8진수](https://www.acmicpc.net/problem/1373)       |         [8진수 2진수](https://www.acmicpc.net/problem/1212)         |            [2진수](https://www.acmicpc.net/problem/2089)            |      [골드바흐 파티션](https://www.acmicpc.net/problem/17103)       |
+|             |         [진법 변환 2](https://www.acmicpc.net/problem/11005)          |        [진법 변환](https://www.acmicpc.net/problem/2745)        |      [Base Conversion](https://www.acmicpc.net/problem/11576)       |         [소인수분해](https://www.acmicpc.net/problem/11653)         |
+|             |
+|     DP      |          [1로 만들기](https://www.acmicpc.net/problem/1463)           |       [2×n 타일링](https://www.acmicpc.net/problem/11726)       |        [2×n 타일링 2](https://www.acmicpc.net/problem/11727)        |       [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)        |       [카드 구매하기](https://www.acmicpc.net/problem/11052)        |
+|             |       [카드 구매하기 2](https://www.acmicpc.net/problem/16194)        |    [1, 2, 3 더하기 5](https://www.acmicpc.net/problem/15990)    |        [쉬운 계단 수](https://www.acmicpc.net/problem/10844)        |           [이친수](https://www.acmicpc.net/problem/2193)            | [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) |
+|             | [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) |         [연속합](https://www.acmicpc.net/problem/1912)          |         [제곱수의 합](https://www.acmicpc.net/problem/1699)         |           [합분해](https://www.acmicpc.net/problem/2225)            |      [1, 2, 3 더하기 3](https://www.acmicpc.net/problem/15988)      |
+|             |            [RGB거리](https://www.acmicpc.net/problem/1149)            |         [동물원](https://www.acmicpc.net/problem/1309)          |         [오르막 수](https://www.acmicpc.net/problem/11057)          |           [스티커](https://www.acmicpc.net/problem/9465)            |         [포도주 시식](https://www.acmicpc.net/problem/2156)         |
+|             |          [정수 삼각형](https://www.acmicpc.net/problem/1932)          | [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055) | [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722) | [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054) |          [연속합 2](https://www.acmicpc.net/problem/13398)          |
+|             |          [타일 채우기](https://www.acmicpc.net/problem/2133)          |         [동물원](https://www.acmicpc.net/problem/1309)          |         [RGB거리 2](https://www.acmicpc.net/problem/17404)          |           [합분해](https://www.acmicpc.net/problem/2225)            |
+|             |
+| 브루트 포스 |          [일곱 난쟁이](https://www.acmicpc.net/problem/2309)          |        [사탕 게임](https://www.acmicpc.net/problem/3085)        |          [날짜 계산](https://www.acmicpc.net/problem/1476)          |         [N과 M (1)](https://www.acmicpc.net/problem/15649)          |         [N과 M (2)](https://www.acmicpc.net/problem/15650)          |
+|             |          [N과 M (3)](https://www.acmicpc.net/problem/15651)           |       [N과 M (4)](https://www.acmicpc.net/problem/15652)        |         [N과 M (5)](https://www.acmicpc.net/problem/15654)          |         [N과 M (6)](https://www.acmicpc.net/problem/15655)          |         [N과 M (7)](https://www.acmicpc.net/problem/15656)          |
+|             |          [N과 M (8)](https://www.acmicpc.net/problem/15657)           |       [N과 M (9)](https://www.acmicpc.net/problem/15663)        |         [N과 M (10)](https://www.acmicpc.net/problem/15664)         |         [N과 M (11)](https://www.acmicpc.net/problem/15665)         |         [N과 M (12)](https://www.acmicpc.net/problem/15666)         |
+|             |          [다음 순열](https://www.acmicpc.net/problem/10972)           |       [이전 순열](https://www.acmicpc.net/problem/10973)        |         [모든 순열](https://www.acmicpc.net/problem/10974)          |
+|             |
 
-### 3 회차
-- 기한: 8/17(월) ~ 8/24(월)
-- 진도 : [자료구조1](https://code.plus/course/41)
-- 자료구조 : 17298, 17299, 1935, 1918, 10808, 10809, 10820, 2743, 11655, 10824, 11656
+## 💻 문제집 목록
 
-### 4 회차
-- 기한: 8/24(월) ~ 8/31(월)
-- 진도 : [수학1](https://code.plus/course/41)
-- 수학1 : 10430, 2609, 1978, 6588, 10872, 1676, 2004, 9613, 17087, 1373, 1212, 2089, 17103, 11005, 2745, 11576, 1463
+<details markdown="1">
+<summary><strong>📄 입 / 출력 </strong></summary>
 
-### 5 회차
-- 기한: 8/31(월) ~ 9/7(월)
-- 진도 : [DP1](https://code.plus/course/41)
-- DP1 : 1463, 11726, 11727, 9095, 11052, 16194, 15990, 10844, 2193, 11053, 14002, 1912, 1699, 2225, 15988 
+| 문제 번호 |         제목          |                  URL                  |
+| :-------: | :-------------------: | :-----------------------------------: |
+|   2557    |      Hello World      | https://www.acmicpc.net/problem/2557  |
+|   1000    |          A+B          | https://www.acmicpc.net/problem/1000  |
+|   2558    |        A+B - 2        | https://www.acmicpc.net/problem/2558  |
+|   10950   |        A+B - 3        | https://www.acmicpc.net/problem/10950 |
+|   10951   |        A+B - 4        | https://www.acmicpc.net/problem/10951 |
+|   10952   |        A+B - 5        | https://www.acmicpc.net/problem/10952 |
+|   10953   |        A+B - 6        | https://www.acmicpc.net/problem/10953 |
+|   11021   |        A+B - 7        | https://www.acmicpc.net/problem/11021 |
+|   11022   |        A+B - 8        | https://www.acmicpc.net/problem/11022 |
+|   11718   |    그대로 출력하기    | https://www.acmicpc.net/problem/11718 |
+|   11719   |   그대로 출력하기 2   | https://www.acmicpc.net/problem/11719 |
+|   11720   |       숫자의 합       | https://www.acmicpc.net/problem/11720 |
+|   11721   | 열 개씩 끊어 출력하기 | https://www.acmicpc.net/problem/11721 |
+|   2741    |        N 찍기         | https://www.acmicpc.net/problem/2741  |
+|   2742    |        기찍 N         | https://www.acmicpc.net/problem/2742  |
+|   2739    |        구구단         | https://www.acmicpc.net/problem/2739  |
+|   1924    |        2007년         | https://www.acmicpc.net/problem/1924  |
+|   8393    |          합           | https://www.acmicpc.net/problem/8393  |
+|   10818   |      최소, 최대       | https://www.acmicpc.net/problem/10818 |
+|   2438    |      별 찍기 - 1      | https://www.acmicpc.net/problem/2438  |
+|   2439    |      별 찍기 - 2      | https://www.acmicpc.net/problem/2439  |
+|   2440    |      별 찍기 - 3      | https://www.acmicpc.net/problem/2440  |
+|   2441    |      별 찍기 - 4      | https://www.acmicpc.net/problem/2441  |
+|   2442    |      별 찍기 - 5      | https://www.acmicpc.net/problem/2442  |
+|   2445    |      별 찍기 - 8      | https://www.acmicpc.net/problem/2445  |
+|   2446    |      별 찍기 - 9      | https://www.acmicpc.net/problem/2446  |
+|   2522    |     별 찍기 - 12      | https://www.acmicpc.net/problem/2522  |
+|   10991   |     별 찍기 - 16      | https://www.acmicpc.net/problem/10991 |
+|   10992   |     별 찍기 - 17      | https://www.acmicpc.net/problem/10992 |
 
-### 6 회차
-- 기한: 9/7(월) ~ 9/21(월)
-- 진도 : [DP1](https://code.plus/course/41)
-- dp1 : 1149, 1309, 9465, 2156 
+---
 
-### 7 회차
-- 기한: 9/21(월) ~ 9/28(월)
-- 진도 : [DP1](https://code.plus/course/41)
-- dp1 : 1932, 11055, 11722, 11054, 13398, 2133, 1309, 17404, 2225
+</details>
+<details markdown="1">
+<summary><strong>📄 백준 Code Plus 알고리즘 기초 1/2 </strong></summary>
+
+#### 📄 자료구조 1
+
+| 문제 번호 |      제목      |                  URL                  |
+| :-------: | :------------: | :-----------------------------------: |
+|   10828   |      스택      | https://www.acmicpc.net/problem/10828 |
+|   9093    |  단어 뒤집기   | https://www.acmicpc.net/problem/9093  |
+|   9012    |      괄호      | https://www.acmicpc.net/problem/9012  |
+|   1874    |   스택 수열    | https://www.acmicpc.net/problem/1874  |
+|   1406    |     에디터     | https://www.acmicpc.net/problem/1406  |
+|   10845   |       큐       | https://www.acmicpc.net/problem/10845 |
+|   1158    | 조세퍼스 문제  | https://www.acmicpc.net/problem/1158  |
+|   10866   |       덱       | https://www.acmicpc.net/problem/10866 |
+|   17413   | 단어 뒤집기 2  | https://www.acmicpc.net/problem/17413 |
+|   10799   |    쇠막대기    | https://www.acmicpc.net/problem/10799 |
+|   17298   |     오큰수     | https://www.acmicpc.net/problem/17298 |
+|   17299   |    오등큰수    | https://www.acmicpc.net/problem/17299 |
+|   1935    |  후위 표기식2  | https://www.acmicpc.net/problem/1935  |
+|   1918    |  후위 표기식   | https://www.acmicpc.net/problem/1918  |
+|   10808   |  알파벳 개수   | https://www.acmicpc.net/problem/10808 |
+|   10809   |  알파벳 찾기   | https://www.acmicpc.net/problem/10809 |
+|   10820   |  문자열 분석   | https://www.acmicpc.net/problem/10820 |
+|   2743    | 단어 길이 재기 | https://www.acmicpc.net/problem/2743  |
+|   11655   |     ROT13      | https://www.acmicpc.net/problem/11655 |
+|   10824   |     네 수      | https://www.acmicpc.net/problem/10824 |
+|   11656   |  접미사 배열   | https://www.acmicpc.net/problem/11656 |
+
+---
+
+#### 📄 수학 1
+
+| 문제 번호 |          제목           |                  URL                  |
+| :-------: | :---------------------: | :-----------------------------------: |
+|   10430   |         나머지          | https://www.acmicpc.net/problem/10430 |
+|   2609    | 최대공약수와 최소공배수 | https://www.acmicpc.net/problem/2609  |
+|   1934    |       최소공배수        | https://www.acmicpc.net/problem/1934  |
+|   1978    |        소수 찾기        | https://www.acmicpc.net/problem/1978  |
+|   1929    |       소수 구하기       | https://www.acmicpc.net/problem/1929  |
+|   6588    |     골드바흐의 추측     | https://www.acmicpc.net/problem/6588  |
+|   10872   |        팩토리얼         | https://www.acmicpc.net/problem/10872 |
+|   1676    |    팩토리얼 0의 개수    | https://www.acmicpc.net/problem/1676  |
+|   2004    |      조합 0의 개수      | https://www.acmicpc.net/problem/2004  |
+|   9613    |         GCD 합          | https://www.acmicpc.net/problem/9613  |
+|   17087   |       숨바꼭질 6        | https://www.acmicpc.net/problem/17087 |
+|   1373    |       2진수 8진수       | https://www.acmicpc.net/problem/1373  |
+|   1212    |       8진수 2진수       | https://www.acmicpc.net/problem/1212  |
+|   2089    |         -2진수          | https://www.acmicpc.net/problem/2089  |
+|   17103   |     골드바흐 파티션     | https://www.acmicpc.net/problem/17103 |
+|   11005   |       진법 변환 2       | https://www.acmicpc.net/problem/11005 |
+|   2745    |        진법 변환        | https://www.acmicpc.net/problem/2745  |
+|   11576   |     Base Conversion     | https://www.acmicpc.net/problem/11576 |
+|   11653   |       소인수분해        | https://www.acmicpc.net/problem/11653 |
+
+---
+
+#### 📄 DP 1
+
+| 문제 번호 |             제목             |                  URL                  |
+| :-------: | :--------------------------: | :-----------------------------------: |
+|   2557    |          1로 만들기          | https://www.acmicpc.net/problem/1463  |
+|   1463    |          2×n 타일링          | https://www.acmicpc.net/problem/11726 |
+|   11726   |         2×n 타일링 2         | https://www.acmicpc.net/problem/11727 |
+|   11727   |        1, 2, 3 더하기        | https://www.acmicpc.net/problem/9095  |
+|   9095    |        카드 구매하기         | https://www.acmicpc.net/problem/11052 |
+|   11052   |       카드 구매하기 2        | https://www.acmicpc.net/problem/16194 |
+|   16194   |       1, 2, 3 더하기 5       | https://www.acmicpc.net/problem/15990 |
+|   15990   |         쉬운 계단 수         | https://www.acmicpc.net/problem/10844 |
+|   10844   |            이친수            | https://www.acmicpc.net/problem/2193  |
+|   2193    |  가장 긴 증가하는 부분 수열  | https://www.acmicpc.net/problem/11053 |
+|   11053   | 가장 긴 증가하는 부분 수열 4 | https://www.acmicpc.net/problem/14002 |
+|   14002   |            연속합            | https://www.acmicpc.net/problem/1912  |
+|   1912    |         제곱수의 합          | https://www.acmicpc.net/problem/1699  |
+|   1699    |            합분해            | https://www.acmicpc.net/problem/2225  |
+|   2225    |       1, 2, 3 더하기 3       | https://www.acmicpc.net/problem/15988 |
+|   15988   |           RGB거리            | https://www.acmicpc.net/problem/1149  |
+|   1149    |            동물원            | https://www.acmicpc.net/problem/1309  |
+|   1309    |          오르막 수           | https://www.acmicpc.net/problem/11057 |
+|   11057   |            스티커            | https://www.acmicpc.net/problem/9465  |
+|   9465    |         포도주 시식          | https://www.acmicpc.net/problem/2156  |
+|   2156    |         정수 삼각형          | https://www.acmicpc.net/problem/1932  |
+|   1932    |    가장 큰 증가 부분 수열    | https://www.acmicpc.net/problem/11055 |
+|   11055   |  가장 긴 감소하는 부분 수열  | https://www.acmicpc.net/problem/11722 |
+|   11722   |  가장 긴 바이토닉 부분 수열  | https://www.acmicpc.net/problem/11054 |
+|   11054   |           연속합 2           | https://www.acmicpc.net/problem/13398 |
+|   13398   |         타일 채우기          | https://www.acmicpc.net/problem/2133  |
+|   2133    |            동물원            | https://www.acmicpc.net/problem/1309  |
+|   1309    |          RGB거리 2           | https://www.acmicpc.net/problem/17404 |
+|   17404   |            합분해            | https://www.acmicpc.net/problem/2225  |
+
+---
+
+#### 📄 Brute Force
+
+| 문제 번호 |      제목      |                  URL                  |
+| :-------: | :------------: | :-----------------------------------: |
+|   2309    |  일곱 난쟁이   | https://www.acmicpc.net/problem/2309  |
+|   3085    |   사탕 게임    | https://www.acmicpc.net/problem/3085  |
+|   1476    |   날짜 계산    | https://www.acmicpc.net/problem/1476  |
+|   1107    |     리모컨     | https://www.acmicpc.net/problem/1107  |
+|   14500   |   테트로미노   | https://www.acmicpc.net/problem/14500 |
+|   6064    |   카잉 달력    | https://www.acmicpc.net/problem/6064  |
+|   1748    | 수 이어 쓰기 1 | https://www.acmicpc.net/problem/1748  |
+|   9095    | 1, 2, 3 더하기 | https://www.acmicpc.net/problem/9095  |
+|   15649   |   N과 M (1)    | https://www.acmicpc.net/problem/15649 |
+|   15650   |   N과 M (2)    | https://www.acmicpc.net/problem/15650 |
+|   15651   |   N과 M (3)    | https://www.acmicpc.net/problem/15651 |
+|   15652   |   N과 M (4)    | https://www.acmicpc.net/problem/15652 |
+|   15654   |   N과 M (5)    | https://www.acmicpc.net/problem/15654 |
+|   15655   |   N과 M (6)    | https://www.acmicpc.net/problem/15655 |
+|   15656   |   N과 M (7)    | https://www.acmicpc.net/problem/15656 |
+|   15657   |   N과 M (8)    | https://www.acmicpc.net/problem/15657 |
+|   15663   |   N과 M (9)    | https://www.acmicpc.net/problem/15663 |
+|   15664   |   N과 M (10)   | https://www.acmicpc.net/problem/15664 |
+|   15665   |   N과 M (11)   | https://www.acmicpc.net/problem/15665 |
+|   15666   |   N과 M (12)   | https://www.acmicpc.net/problem/15666 |
+|   10972   |   다음 순열    | https://www.acmicpc.net/problem/10972 |
+|   10973   |   이전 순열    | https://www.acmicpc.net/problem/10973 |
+|   10974   |   모든 순열    | https://www.acmicpc.net/problem/10974 |
+|   10819   | 차이를 최대로  | https://www.acmicpc.net/problem/10819 |
+|   10971   | 외판원 순회 2  | https://www.acmicpc.net/problem/10971 |
+|   6603    |      로또      | https://www.acmicpc.net/problem/6603  |
+|   9095    | 1, 2, 3 더하기 | https://www.acmicpc.net/problem/9095  |
+|   1759    |  암호 만들기   | https://www.acmicpc.net/problem/1759  |
+|   14501   |      퇴사      | https://www.acmicpc.net/problem/14501 |
+|   14889   | 스타트와 링크  | https://www.acmicpc.net/problem/14889 |
+|   15661   | 링크와 스타트  | https://www.acmicpc.net/problem/15661 |
+|   2529    |     부등호     | https://www.acmicpc.net/problem/2529  |
+|   1248    |     맞춰봐     | https://www.acmicpc.net/problem/1248  |
+|   11723   |      집합      | https://www.acmicpc.net/problem/11723 |
+|   1182    | 부분수열의 합  | https://www.acmicpc.net/problem/1182  |
+|   14889   | 스타트와 링크  | https://www.acmicpc.net/problem/14889 |
+|   14391   |   종이 조각    | https://www.acmicpc.net/problem/14391 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 삼성 SW 역량 테스트 기출 문제</strong></summary>
+
+| 문제 번호 |           제목           |                  URL                  |
+| :-------: | :----------------------: | :-----------------------------------: |
+|   13460   |       구슬 탈출 2        | https://www.acmicpc.net/problem/13460 |
+|   12100   |        2048(Easy         | https://www.acmicpc.net/problem/12100 |
+|   3190    |            뱀            | https://www.acmicpc.net/problem/3190  |
+|   13458   |        시험 감독         | https://www.acmicpc.net/problem/13458 |
+|   14499   |      주사위 굴리기       | https://www.acmicpc.net/problem/14499 |
+|   14500   |        테트로미노        | https://www.acmicpc.net/problem/14500 |
+|   14501   |           퇴사           | https://www.acmicpc.net/problem/14501 |
+|   14502   |          연구소          | https://www.acmicpc.net/problem/14502 |
+|   14503   |       로봇 청소기        | https://www.acmicpc.net/problem/14503 |
+|   14888   |     연산자 끼워넣기      | https://www.acmicpc.net/problem/14888 |
+|   14889   |      스타트와 링크       | https://www.acmicpc.net/problem/14889 |
+|   14890   |          경사로          | https://www.acmicpc.net/problem/14890 |
+|   14891   |         톱니바퀴         | https://www.acmicpc.net/problem/14891 |
+|   15683   |           감시           | https://www.acmicpc.net/problem/15683 |
+|   15684   |       사다리 조작        | https://www.acmicpc.net/problem/15684 |
+|   15685   |       드래곤 커브        | https://www.acmicpc.net/problem/15685 |
+|   15686   |        치킨 배달         | https://www.acmicpc.net/problem/15686 |
+|   5373    |           큐빙           | https://www.acmicpc.net/problem/5373  |
+|   16234   |        인구 이동         | https://www.acmicpc.net/problem/16234 |
+|   16235   |       나무 재테크        | https://www.acmicpc.net/problem/16235 |
+|   16236   |        아기 상어         | https://www.acmicpc.net/problem/16236 |
+|   17144   |      미세먼지 안녕!      | https://www.acmicpc.net/problem/17144 |
+|   17143   |          낚시왕          | https://www.acmicpc.net/problem/17143 |
+|   17140   |    이차원 배열과 연산    | https://www.acmicpc.net/problem/17140 |
+|   17142   |         연구소 3         | https://www.acmicpc.net/problem/17142 |
+|   17779   |       게리맨더링 2       | https://www.acmicpc.net/problem/17779 |
+|   17837   |      새로운 게임 2       | https://www.acmicpc.net/problem/17837 |
+|   17822   |       원판 돌리기        | https://www.acmicpc.net/problem/17822 |
+|   17825   |      주사위 윷놀이       | https://www.acmicpc.net/problem/17825 |
+|   19235   |      모노미노도미노      | https://www.acmicpc.net/problem/19235 |
+|   20061   |     모노미노도미노 2     | https://www.acmicpc.net/problem/20061 |
+|   19236   |       청소년 상어        | https://www.acmicpc.net/problem/19236 |
+|   19237   |        어른 상어         | https://www.acmicpc.net/problem/19237 |
+|   19238   |       스타트 택시        | https://www.acmicpc.net/problem/19238 |
+|   20055   | 컨베이어 벨트 위의 로봇  | https://www.acmicpc.net/problem/20055 |
+|   20056   |  마법사 상어와 파이어볼  | https://www.acmicpc.net/problem/20056 |
+|   20057   |  마법사 상어와 토네이도  | https://www.acmicpc.net/problem/20057 |
+|   20058   | 마법사 상어와 파이어스톰 | https://www.acmicpc.net/problem/20058 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 SW Expert Academy 모의 SW 역량테스트 </strong></summary>
+
+| 문제 번호 |         제목         |                                              URL                                              |
+| :-------: | :------------------: | :-------------------------------------------------------------------------------------------: |
+|   1949    |     등산로 조성      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq |
+|   1953    |     탈주범 검거      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpLlKAQ4DFAUq |
+|   2105    |     디저트 카페      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5VwAr6APYDFAWu |
+|   2112    |      보호 필름       | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V1SYKAaUDFAWu |
+|   2117    |    홈 방범 서비스    | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5V61LqAf8DFAWu |
+|   2382    |     미생물 격리      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV597vbqAH0DFAVl |
+|   2383    |    점심 식사시간     | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl |
+|   4013    |     특이한 자석      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWIeV9sKkcoDFAVH |
+|   4014    |     활주로 건설      | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWIeW7FakkUDFAVH |
+|   5644    |      무선 충전       | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRDL1aeugDFAUo |
+|   5648    | 원자 소멸 시뮬레이션 | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRFInKex8DFAUo |
+|   5650    |      핀볼 게임       | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRF8s6ezEDFAUo |
+|   5653    |     줄기세포배양     | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo |
+|   5656    |      벽돌 깨기       | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo |
+|   5658    |  보물상자 비밀번호   | https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 프로그래머스</strong></summary>
+
+|     제목      |                           URL                            |
+| :-----------: | :------------------------------------------------------: |
+|  가장 큰 수   | https://programmers.co.kr/learn/courses/30/lessons/42746 |
+|     카펫      | https://programmers.co.kr/learn/courses/30/lessons/42842 |
+|   조이스틱    | https://programmers.co.kr/learn/courses/30/lessons/42860 |
+|   숫자야구    | https://programmers.co.kr/learn/courses/30/lessons/42841 |
+|   타겟 넘버   | https://programmers.co.kr/learn/courses/30/lessons/43165 |
+|  N으로 표현   | https://programmers.co.kr/learn/courses/30/lessons/42895 |
+|  타일 장식물  | https://programmers.co.kr/learn/courses/30/lessons/43104 |
+| 전화번호 목록 | https://programmers.co.kr/learn/courses/30/lessons/42577 |
+|   네트워크    | https://programmers.co.kr/learn/courses/30/lessons/43162 |
+|     위장      | https://programmers.co.kr/learn/courses/30/lessons/42578 |
+|   단어변환    | https://programmers.co.kr/learn/courses/30/lessons/43163 |
+|      탑       | https://programmers.co.kr/learn/courses/30/lessons/42588 |
+|    H-Index    | https://programmers.co.kr/learn/courses/30/lessons/42747 |
+|   입국 심사   | https://programmers.co.kr/learn/courses/30/lessons/43238 |
+|     예산      | https://programmers.co.kr/learn/courses/30/lessons/43237 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2021 KAKAO BLIND RECRUITMENT (프로그래머스)</strong></summary>
+
+|       문제       | 레벨 |                           URL                            |
+| :--------------: | :--: | :------------------------------------------------------: |
+| 신규 아이디 추천 |  1   | https://programmers.co.kr/learn/courses/30/lessons/72410 |
+|   메뉴 리뉴얼    |  2   | https://programmers.co.kr/learn/courses/30/lessons/72411 |
+|    순위 검색     |  2   | https://programmers.co.kr/learn/courses/30/lessons/72412 |
+|  합승 택시 요금  |  3   | https://programmers.co.kr/learn/courses/30/lessons/72413 |
+|    광고 삽입     |  3   | https://programmers.co.kr/learn/courses/30/lessons/72414 |
+|  카드 짝 맞추기  |  3   | https://programmers.co.kr/learn/courses/30/lessons/72415 |
+| 매출 하락 최소화 |  4   | https://programmers.co.kr/learn/courses/30/lessons/72416 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2020 KAKAO BLIND RECRUITMENT (프로그래머스)</strong></summary>
+
+|      문제      | 레벨 |                           URL                            |
+| :------------: | :--: | :------------------------------------------------------: |
+|  문자열 압축   |  2   | https://programmers.co.kr/learn/courses/30/lessons/60057 |
+|   괄호 변환    |  2   | https://programmers.co.kr/learn/courses/30/lessons/60058 |
+| 자물쇠와 열쇠  |  3   | https://programmers.co.kr/learn/courses/30/lessons/60059 |
+| 기둥과 보 설치 |  3   | https://programmers.co.kr/learn/courses/30/lessons/60061 |
+|   외벽 점검    |  3   | https://programmers.co.kr/learn/courses/30/lessons/60062 |
+| 블록 이동하기  |  3   | https://programmers.co.kr/learn/courses/30/lessons/60063 |
+|   가사 검색    |  4   | https://programmers.co.kr/learn/courses/30/lessons/60060 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2020 카카오 인턴십 (프로그래머스)</strong></summary>
+
+|     문제      | 레벨 |                           URL                            |
+| :-----------: | :--: | :------------------------------------------------------: |
+| 키패드 누르기 |  1   | https://programmers.co.kr/learn/courses/30/lessons/67256 |
+|  수식 최대화  |  2   | https://programmers.co.kr/learn/courses/30/lessons/67257 |
+|   보석 쇼핑   |  3   | https://programmers.co.kr/learn/courses/30/lessons/67258 |
+|  경주로 건설  |  3   | https://programmers.co.kr/learn/courses/30/lessons/67259 |
+|   동굴 탐험   |  4   | https://programmers.co.kr/learn/courses/30/lessons/67260 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2019 KAKAO BLIND RECRUITMENT (프로그래머스)</strong></summary>
+
+|        문제        | 레벨 |                           URL                            |
+| :----------------: | :--: | :------------------------------------------------------: |
+|       실패율       |  1   | https://programmers.co.kr/learn/courses/30/lessons/42889 |
+|     오픈채팅방     |  2   | https://programmers.co.kr/learn/courses/30/lessons/42888 |
+|       후보키       |  2   | https://programmers.co.kr/learn/courses/30/lessons/42890 |
+|    길 찾기 게임    |  3   | https://programmers.co.kr/learn/courses/30/lessons/42892 |
+|     매칭 점수      |  3   | https://programmers.co.kr/learn/courses/30/lessons/42893 |
+| 무지의 먹방 라이브 |  4   | https://programmers.co.kr/learn/courses/30/lessons/42891 |
+|     블록 게임      |  4   | https://programmers.co.kr/learn/courses/30/lessons/42894 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2019 카카오 개발자 겨울 인턴십 문제 (프로그래머스)</strong></summary>
+
+|         문제         | 레벨 |                           URL                            |
+| :------------------: | :--: | :------------------------------------------------------: |
+| 크레인 인형뽑기 게임 |  1   | https://programmers.co.kr/learn/courses/30/lessons/64061 |
+|         튜플         |  2   | https://programmers.co.kr/learn/courses/30/lessons/64065 |
+|     불량 사용자      |  3   | https://programmers.co.kr/learn/courses/30/lessons/64064 |
+|     호텔 방 배정     |  3   | https://programmers.co.kr/learn/courses/30/lessons/64063 |
+|   징검다리 건너기    |  4   | https://programmers.co.kr/learn/courses/30/lessons/64062 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 2018 KAKAO BLIND RECRUITMENT (프로그래머스)</strong></summary>
+
+|         문제          | 레벨 |                           URL                            |
+| :-------------------: | :--: | :------------------------------------------------------: |
+|    [1차] 비밀지도     |  1   | https://programmers.co.kr/learn/courses/30/lessons/17681 |
+|    [1차] 다트 게임    |  1   | https://programmers.co.kr/learn/courses/30/lessons/17682 |
+| [1차] 뉴스 클러스터링 |  2   | https://programmers.co.kr/learn/courses/30/lessons/17677 |
+|   [1차] 프렌즈4블록   |  2   | https://programmers.co.kr/learn/courses/30/lessons/17679 |
+|      [1차] 캐시       |  2   | https://programmers.co.kr/learn/courses/30/lessons/17680 |
+|    [3차] 방금그곡     |  2   | https://programmers.co.kr/learn/courses/30/lessons/17683 |
+|      [3차] 압축       |  2   | https://programmers.co.kr/learn/courses/30/lessons/17684 |
+|   [3차] 파일명 정렬   |  2   | https://programmers.co.kr/learn/courses/30/lessons/17686 |
+|   [3차] n진수 게임    |  2   | https://programmers.co.kr/learn/courses/30/lessons/17687 |
+|   [1차] 추석 트래픽   |  3   | https://programmers.co.kr/learn/courses/30/lessons/17676 |
+|    [1차] 셔틀버스     |  3   | https://programmers.co.kr/learn/courses/30/lessons/17678 |
+|    [3차] 자동완성     |  4   | https://programmers.co.kr/learn/courses/30/lessons/17685 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 카카오 코드 페스티벌 2018 예선</strong></summary>
+
+| 문제 번호 |   제목    |               URL                |
+| :-------: | :-------: | :------------------------------: |
+|   15953   | 상금 헌터 | http://acmicpc.net/problem/15953 |
+|   15954   |  인형들   | http://acmicpc.net/problem/15954 |
+
+---
+
+</details>
+
+<details markdown="1">
+<summary><strong>📄 카카오 코드 페스티벌 2018</strong></summary>
+
+| 문제 번호 |    제목    |               URL                |
+| :-------: | :--------: | :------------------------------: |
+|   15997   | 승부 예측  | http://acmicpc.net/problem/15997 |
+|   15998   | 카카오머니 | http://acmicpc.net/problem/15998 |
+
+---
+
+</details>
+
+## Reference
+
+- https://github.com/CodeTest-StudyGroup/Code-Test-Study.git
+- https://code.plus/course/41
