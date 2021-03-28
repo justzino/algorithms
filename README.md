@@ -1,11 +1,6 @@
-# 알고리즘 스터디
+# 알고리즘 공부
 
-- 참가자: [Jinho Lee](https://github.com/justzino), [Minjeong Jeon](https://github.com/ummjevel) [Namil Kim](https://github.com/simyeen)
-- 커리큘럼: [백준](https://code.plus/course/41), [블로그](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0) 문제
-
-## 기초알고리즘
-
-쉬운 것도 무시하지 말고 기초부터 다시.
+#### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
 ## 📅 문제 기록 
 
@@ -449,4 +444,5 @@
 ## Reference
 
 - https://github.com/CodeTest-StudyGroup/Code-Test-Study.git
-- https://code.plus/course/41
+- [백준](https://code.plus/course/41)
+- [블로그](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
