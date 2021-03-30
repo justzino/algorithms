@@ -39,12 +39,14 @@
 | Graph(DFS/BFS)  |           [DFS와 BFS](https://www.acmicpc.net/problem/1260)           |        [숨바꼭질](https://www.acmicpc.net/problem/1697)         |          [바이러스](https://www.acmicpc.net/problem/2606)           |         [유기농 배추](https://www.acmicpc.net/problem/1012)         |        [효율적인 해킹](https://www.acmicpc.net/problem/1325)        |
 | Graph(Dijkstra) |             [해킹](https://www.acmicpc.net/problem/10282)             |
 |     Greedy      |              [배](https://www.acmicpc.net/problem/1092)               |
-|     Search      |  
+|     Search      |
+
+---
 
 ## 💻 문제집 목록
 
 <details markdown="1">
-<summary><strong>📄 입 / 출력 </strong></summary>
+<summary><strong>📄 입 / 출력 </strong></summary>  
 
 | 문제 번호 |         제목          |                  URL                  |
 | :-------: | :-------------------: | :-----------------------------------: |
