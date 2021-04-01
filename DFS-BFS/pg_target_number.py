@@ -14,3 +14,12 @@ def solution(numbers, target):
 
     dfs(0, 0)
     return answer
+
+
+def solution(numbers, target):
+    if not numbers and target == 0:
+        return 1
+    elif not numbers and target != 0:
+        return 0
+    else:
+        return solution(numbers[1:], target + numbers[0]) + solution(numbers[1:], target - numbers[0])
