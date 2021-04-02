@@ -37,6 +37,7 @@
 |                 |          [다음 순열](https://www.acmicpc.net/problem/10972)           |       [이전 순열](https://www.acmicpc.net/problem/10973)        |         [모든 순열](https://www.acmicpc.net/problem/10974)          |
 |                 |
 | Graph(DFS/BFS)  |           [DFS와 BFS](https://www.acmicpc.net/problem/1260)           |        [숨바꼭질](https://www.acmicpc.net/problem/1697)         |          [바이러스](https://www.acmicpc.net/problem/2606)           |         [유기농 배추](https://www.acmicpc.net/problem/1012)         |        [효율적인 해킹](https://www.acmicpc.net/problem/1325)        |
+|                 |  [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)  |
 | Graph(Dijkstra) |             [해킹](https://www.acmicpc.net/problem/10282)             |
 |     Greedy      |              [배](https://www.acmicpc.net/problem/1092)               |
 |     Search      |
