@@ -1,3 +1,4 @@
+# 🛠 자료 구조
 ## 시간 제한
 - 리스트의 슬라이싱은 O(N)
 - 삭제나 추가 연산이 모두 O(n)의 시간복잡도
@@ -19,7 +20,7 @@ list를 사용해도 되지만 반복적인 pop, append가 등장하는 경우 d
 - In python docs I can see that deque is a special collection highly optimized for poping/adding items from left or right sides.  
 - Source. Stack Overflow python: deque vs list performance comparison
 
-#### deque에 append와 extend, 원소 추가
+### deque에 append와 extend, 원소 추가
 ```python
 from collections import deque
 
@@ -34,7 +35,7 @@ dq.extend(['right']) #오른쪽으로 extend
 dq.extendleft(['left']) #마찬가지로 왼쪽으로 extend
 ```
 
-#### deque의 pop와 remove, 원소 삭제
+### deque의 pop와 remove, 원소 삭제
 ```python
 from collections import deque
 
@@ -49,7 +50,7 @@ dq.remove('t') #'t'를 찾아서 첫번째 t 항목 삭제
 dq.clear() #모든 항목 삭제
 ```
 
-#### 그 외 deque의 중요한 기능
+### 그 외 deque의 중요한 기능
 ```python
 dq = deque()
 dq.extend('python') #deque(['p','y','t','h','o','n'])
@@ -87,7 +88,8 @@ list(dq)[0:3] # ['p', 'y', 't']
 - Counter 부터 deque, defaultdict 등등
 
 
-## about pythonic
+## Reference
+### about pythonic
 [파이썬 클린코드 - 파이썬스러운 코드와 이를 기반으로 한 클린 코드를 짜는 것](https://dailyheumsi.tistory.com/221)  
 > pythonic 코드 작성을 위한 참고 링크들  
 > [파이썬을 파이썬 답게. (코딩 문제편)](https://dailyheumsi.tistory.com/31)  
@@ -99,11 +101,11 @@ list(dq)[0:3] # ['p', 'y', 't']
 [파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)](https://wayhome25.github.io/python/2017/06/14/time-complexity/)    
 
 
-## List Comprehension 에 대한 이해
+### List Comprehension 에 대한 이해
 [list comprehension에 대한 이해](https://shoark7.github.io/programming/python/about-list-comprehension-python)  
 
 
-## dictionary 를 사용하는 여러가지 방식
+### dictionary 를 사용하는 여러가지 방식
 1935, 1918번 참고
 
 ```python
@@ -162,9 +164,9 @@ print(*result)
 ## 문자 함수
 10820
 ```python
-        if c.islower():         # 'a' <= c <= 'z'
-            result[0] += 1
-        elif c.isupper():       # 'A' <= c <= 'Z'
-            result[1] += 1
-        elif c.isdigit():       # '0' <= c <= '9' 
+if c.islower():         # 'a' <= c <= 'z'
+    result[0] += 1
+elif c.isupper():       # 'A' <= c <= 'Z'
+    result[1] += 1
+elif c.isdigit():       # '0' <= c <= '9' 
 ```
