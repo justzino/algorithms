@@ -8,6 +8,7 @@
 [✅ 입력 받기](in&out/In-Out.md)  
 [✅ 예외 처리](in&out/Exception.md)  
 [✅ 진법 다루기](math/Numeral-System.md)  
+[✅ 순열과 조합](math/Permutation-Combination.md)  
 [✅ 자료 구조](DataStructure/DataStructure.md)  
 [✅ DP](DP/README.md)  
 [✅ DFS & BFS 예시](DFS-BFS/1260.py)  
