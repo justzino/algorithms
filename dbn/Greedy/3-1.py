@@ -1,8 +1,11 @@
 n = int(input())
+count = 0
 
-n_500, m_500 = divmod(n, 500)
-n_100m, m_100 = divmod(m_500, 100)
-n_50, m_50 = divmod(m_100, 50)
-n_10, m_10 = divmod(m_50, 10)
+# 큰 단위의 화폐부터 차례대로 확인
+coin_types = [500, 100, 50, 10]
 
-print(n_500 + n_100m + n_50 + n_10)
+for coin in coin_types:
+    count += n // coin  # 해당 coin으로 거슬러 줄 수 있는 개수 세기
+    n %= coin
+
+print(count)
