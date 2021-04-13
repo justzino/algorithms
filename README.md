@@ -12,7 +12,7 @@
 [✅ DP](DP/README.md)  
 [✅ DFS & BFS 예시](DFS-BFS/1260.py)  
 [✅ Dijkstra](Graph/dijkstra3.py)   
-[✅ 좌표 및 방향 구현](dbn/Implementation/4-1.py)
+[✅ 좌표 및 방향 구현](This-is-Coding-Test-Book/Implementation/4-1.py)
 
 ---
 
