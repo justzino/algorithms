@@ -21,3 +21,11 @@ for step in steps:
         count += 1
 
 print(count)
+
+
+# 입력 : 시작 좌표 / 출력: 갈 수 있는 경우의 수
+# 입력 : a1
+# 출력 2
+
+# 입력 : c2
+# 출력 : 6
