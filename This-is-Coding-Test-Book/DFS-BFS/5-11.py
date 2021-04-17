@@ -20,6 +20,16 @@ def bfs(x, y):
         v = q.popleft()
         x, y = v[0], v[1]
 
+        if x > 0 and graph[x-1][y] == 1:
+            visited[x-1][y] = True
+            dp[x-1][y] = min(dp[x-1][y], dp[x][y] + 1)
+            q.append((x-1, y))
+
+        if y > 0 and graph[x][y-1] == 1:
+            visited[x][y-1] = True
+            dp[x][y-1] = min(dp[x][y-1], dp[x][y] + 1)
+            q.append((x, y-1))
+
         if x < n-1 and graph[x+1][y] == 1:
             visited[x+1][y] = True
             dp[x+1][y] = min(dp[x+1][y], dp[x][y] + 1)
