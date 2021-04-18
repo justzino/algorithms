@@ -99,6 +99,7 @@ print(result)
 ```
 `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
+## key에 함수 사용
 ```python
 def setting(data):
     return data[1]
@@ -108,5 +109,15 @@ array = [("바나나", 2), ("사과", 5), ("당근", 3)]
 
 result = sorted(array, key=setting)
 print(result)
+```
+`[('바나나', 2), ('당근', 3), ('사과', 5)]`
+
+## key에 lambda 사용
+```python
+array = [("바나나", 2), ("사과", 5), ("당근", 3)]
+
+# key 를 이용하여 점수를 기준으로 정렬
+array = sorted(array, key=lambda fruit: fruit[1])
+print(array)
 ```
 `[('바나나', 2), ('당근', 3), ('사과', 5)]`
