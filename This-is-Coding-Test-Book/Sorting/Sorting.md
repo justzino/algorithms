@@ -58,10 +58,9 @@ def quick_sort(array):
 print(quick_sort(array))
 ```
 
-# Count Sort
+# Count Sort (계수 정렬)
 
 ```python
-# 계수 정렬
 # 데이터의 크기가 한정되어 있고, 값이 많이 중복되어 있을수록 유리하다.
 # 가장 큰 데이터와 가장작은 데이터의 차이가 1,000,000을 넘지 않을때 효과적이다.
 # O(N + K), N: 데이터의 개수, K: 데이터 중 최대값의 크기
