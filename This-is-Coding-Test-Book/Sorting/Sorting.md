@@ -1,4 +1,4 @@
-# Quick Sort1
+## Quick Sort1
 
 ```python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
@@ -33,7 +33,7 @@ quick_sort(array, 0, len(array) - 1)
 print(array)
 ```
 
-# Quick Sort2
+## Quick Sort2
 
 ```python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
@@ -58,7 +58,57 @@ def quick_sort(array):
 print(quick_sort(array))
 ```
 
-# Count Sort (계수 정렬)
+## Heap Sort - heapq 사용
+- 다익스트라 최단 경로 알고리즘을 포함한, 다양한 알고리즘에서 **우선순위 큐 기능을 구현할 때 사용**.
+- PriorityQueue 라이브러리를 사용할 수 있지만, 코테 환경에서는 보통 heapq가 더 빠르다.
+- 파이썬의 힙은 **최소 힙(Min Heap)** 으로 구성되어 있다.
+- 단순히 원소를 힙에 전부 넣었다가 빼는 것만으로도 시간 복잡도 O(NlogN)에 오름차순 정렬이 완료된다.
+- `heapq.heappush()`
+- `heapq.heappop()`
+- ex) Heap Sort 를 heapq 로 구현
+```python
+import heapq
+
+def heapsort(iterable):
+    h = []
+    result = []
+    # 모든 원소를 차례대로 힙에 삽입
+    for value in iterable:
+        heapq.heappush(h, value)
+    # 힙에 삽입된 모든 원소를 차례대로 꺼내어 담기
+    for i in range(len(h)):
+        result.append(heapq.heappop(h))
+    return result
+
+result = heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
+print(result)
+```
+`[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+
+
+- 파이썬에서는 최대 힙(Max Heap)을 제공하지 않는다.
+- Max Heap을 구현 해야할 때는 원소의 부호를 임시로 변경하는 방식 사용
+- ex) Max Heap을 통한, 내림차순 힙 정렬
+```python
+import heapq
+
+def heapsort(iterable):
+    h = []
+    result = []
+    # 모든 원소를 차례대로 삽입
+    for value in iterable:
+        heapq.heappush(h, -value)
+    # 힙에 삽입된 모든 원소를 차례대로 꺼내어 담기
+    for i in range(len(h)):
+        result.append(-heapq.heappop(h))
+    return result
+
+result = heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
+print(result)
+```
+`[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]`
+
+## Count Sort (계수 정렬)
 
 ```python
 # 데이터의 크기가 한정되어 있고, 값이 많이 중복되어 있을수록 유리하다.
@@ -77,10 +127,9 @@ for i in range(len(array)):
 for i in range(len(count)):
     for j in range(count[i]):
         print(i, end=' ')   # 띄어쓰기를 구분으로 등장한 횟수만큼 인덱스 출력
-
 ```
 
-# 파이썬 정렬 라이브러리
+## 파이썬 정렬 라이브러리
 
 ```python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
@@ -98,7 +147,7 @@ print(result)
 ```
 `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
-## key에 함수 사용
+### key에 함수 사용
 ```python
 def setting(data):
     return data[1]
@@ -111,7 +160,7 @@ print(result)
 ```
 `[('바나나', 2), ('당근', 3), ('사과', 5)]`
 
-## key에 lambda 사용
+### key에 lambda 사용
 ```python
 array = [("바나나", 2), ("사과", 5), ("당근", 3)]
 

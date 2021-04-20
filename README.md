@@ -5,22 +5,42 @@
 ## 알고리즘 정리
 ### Python
 
-[✅ 입력 받기](in&out/In-Out.md)  
-[✅ 예외 처리](in&out/Exception.md)   
-[✅ 진법 다루기](math/Numeral-System.md)  
-[✅ 파이썬 주요 라이브러리](This-is-Coding-Test-Book/Python-Libraries.md)  
-[✅ 순열과 조합](math/Permutation-Combination.md)  
-[✅ 자료 구조](DataStructure/DataStructure.md)  
-[✅ DP](DP/README.md)  
-[✅ Adjacent Matrix & List](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
-[✅ BFS](This-is-Coding-Test-Book/DFS-BFS/BFS.py)  
-[✅ DFS](This-is-Coding-Test-Book/DFS-BFS/DFS.py)  
-[✅ DFS & BFS 예시](DFS-BFS/1260.py)  
-[✅ Dijkstra](Graph/dijkstra3.py)   
-[✅ 좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
-[✅ 좌표 및 방향 구현 예시2 - 저장된 step 으로](This-is-Coding-Test-Book/Implementation/4-3-2.py)  
-[✅ 시:분:초 안에 특정 숫자 있는지 판독](This-is-Coding-Test-Book/Implementation/4-2.py)  
-[✅ Sorting](This-is-Coding-Test-Book/Sorting/Sorting.md)
+- [✅ 입력 받기](in&out/In-Out.md)  
+- [✅ 예외 처리](in&out/Exception.md)   
+- [✅ 진법 다루기](math/Numeral-System.md)
+- [✅ 시간 복잡도](DataStructure/Time-Complexity.md)
+  
+- 구현하기
+    - [✅ 좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
+    - [✅ 좌표 및 방향 구현 예시2 - 저장된 step 으로](This-is-Coding-Test-Book/Implementation/4-3-2.py)  
+    - [✅ 시:분:초 안에 특정 숫자 있는지 판독](This-is-Coding-Test-Book/Implementation/4-2.py)  
+
+- 파이썬 주요 라이브러리
+    - [✅ eval(), sorted(), itertools, heapq, bisect, collections, math](This-is-Coding-Test-Book/Python-Libraries.md)  
+    - [✅ 순열과 조합 - itertools](math/Permutation-Combination.md)
+    - [✅ deque](DataStructure/deque.md)
+    - [✅ dictionary, 문자 함수 (isupper / islower / isdigit), list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
+  
+- BFS, DFS
+    - [✅ 인접 행렬 & 리스트 (Adjacent Matrix & List)](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
+    - [✅ BFS](This-is-Coding-Test-Book/DFS-BFS/BFS.py)  
+    - [✅ DFS](This-is-Coding-Test-Book/DFS-BFS/DFS.py)  
+    - [✅ DFS & BFS 예시](DFS-BFS/1260.py)  
+    
+- Sorting
+  - [✅ Quick Sort, Heap Sort, Count Sort, 정렬 라이브러리](This-is-Coding-Test-Book/Sorting/Sorting.md)
+  
+- 이진 탐색 (Binary Search)
+    - [✅ 이진 탐색 - 재귀 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search1.py)  
+    - [✅ 이진 탐색 - 반복문 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search2.py)  
+    
+- [✅ DP](DP/README.md)
+
+- [✅ Shortest Path - Dijkstra](This-is-Coding-Test-Book/Shortest-Path/Shortest-Path.md)
+    - [✅ Dijkstra - 우선순위 큐 사용: O(E logV)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra1.py)
+    - [✅ Dijkstra - : O(V^2)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra2.py)
+
+
 
 ---
 
