@@ -14,9 +14,9 @@
 - 최단 거리 탐색에 우선순위 큐 사용
 - V: Vertex(노드의 개수), E: Edge(간선의 개수)
 - 시간 복잡도: O(E logV)
-    - 최단 거리 탐색 - 우선순위 큐 사용 : O(logV)
-    - 현재 노드와 연결된 노드를 매번 일일이 확인 : O(E)
-- [구현](This-is-Coding-Test-Book/Shortest-Path/Dijkstra1.py)
+  - 최단 거리 탐색 - 우선순위 큐 사용 : O(logV)
+  - 현재 노드와 연결된 노드를 매번 일일이 확인 : O(E)
+- [구현 코드](This-is-Coding-Test-Book/Shortest-Path/Dijkstra1.py)
 
 
 
