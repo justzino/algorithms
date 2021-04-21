@@ -24,6 +24,16 @@
 - 구현하기 쉽지만 느리게 동작하는 코드
 - 최단 거리 탐색에 선형 탐색 사용
 - 시간 복잡도: O(V^2) 
-    - 최단 거리 탐색 - 선형 탐색 : O(V)
-    - 현재 노드와 연결된 노드를 매번 일일이 확인 : O(V)
-- [구현](This-is-Coding-Test-Book/Shortest-Path/Dijkstra2.py)
+  - 최단 거리 탐색 - 선형 탐색 : O(V)
+  - 현재 노드와 연결된 노드를 매번 일일이 확인 : O(V)
+- [구현 코드](This-is-Coding-Test-Book/Shortest-Path/Dijkstra2.py)
+
+# Floyd-Warshall 알고리즘
+- **모든 지점**에서 **다른 모든 지점**까지의 최단 경로를 모두 구해야 하는 경우
+- **2차원 리스트**에 '최단 거리' 정보를 저장 (DP)
+- 노드의 개수: N개 일 때 시간 복잡도: O(N^3)
+  - N번의 단계: O(N)
+  - 현재 노드를 거쳐가는 모든 경로 고려 : O(N^2)
+- [구현 코드](This-is-Coding-Test-Book/Shortest-Path/Floyd-Warshall.py)
+
+  
