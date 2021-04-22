@@ -42,3 +42,6 @@
 - 서로소 부분 집합들로 나누어진 원소들의 데이터를 처리하기 위한 자료구조
 - Union & Find 연산
 - 트리 자료구조를 이용하여 집합 표현
+- 노드의 개수: V, find() or union() 개수: M
+- [구현 코드1](This-is-Coding-Test-Book/Graph/Disjoint-Set1.py) - O(VM)
+
