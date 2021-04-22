@@ -10,45 +10,45 @@
 - [✅ 진법 다루기](math/Numeral-System.md)
 - [✅ 시간 복잡도](DataStructure/Time-Complexity.md)
   
-- 구현하기
-  - [✅ 좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
-  - [✅ 좌표 및 방향 구현 예시2 - 저장된 step 으로](This-is-Coding-Test-Book/Implementation/4-3-2.py)  
-  - [✅ 시:분:초 안에 특정 숫자 있는지 판독](This-is-Coding-Test-Book/Implementation/4-2.py)  
+- ✅ 구현하기
+  - [좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
+  - [좌표 및 방향 구현 예시2 - 저장된 step 으로](This-is-Coding-Test-Book/Implementation/4-3-2.py)  
+  - [시:분:초 안에 특정 숫자 있는지 판독](This-is-Coding-Test-Book/Implementation/4-2.py)  
 
-- 파이썬 주요 라이브러리
-  - [✅ eval(), sorted(), itertools, heapq, bisect, collections, math](This-is-Coding-Test-Book/Python-Libraries.md)  
-  - [✅ 순열과 조합 - itertools](math/Permutation-Combination.md)
-  - [✅ deque](DataStructure/deque.md)
-  - [✅ dictionary, 문자 함수 (isupper / islower / isdigit), list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
+- ✅ 파이썬 주요 라이브러리
+  - [eval(), sorted(), itertools, heapq, bisect, collections, math](This-is-Coding-Test-Book/Python-Libraries.md)  
+  - [순열과 조합 - itertools](math/Permutation-Combination.md)
+  - [deque](DataStructure/deque.md)
+  - [dictionary, 문자 함수 (isupper / islower / isdigit), list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
   
-- BFS, DFS
-  - [✅ 인접 행렬 & 리스트 (Adjacent Matrix & List)](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
-  - [✅ BFS](This-is-Coding-Test-Book/DFS-BFS/BFS.py)  
-  - [✅ DFS](This-is-Coding-Test-Book/DFS-BFS/DFS.py)  
-  - [✅ DFS & BFS 예시](DFS-BFS/1260.py)  
+- ✅ BFS, DFS
+  - [인접 행렬 & 리스트 (Adjacent Matrix & List)](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
+  - [BFS](This-is-Coding-Test-Book/DFS-BFS/BFS.py)  
+  - [DFS](This-is-Coding-Test-Book/DFS-BFS/DFS.py)  
+  - [DFS & BFS 예시](DFS-BFS/1260.py)  
   
-- Sorting
-  - [✅ Quick Sort, Heap Sort, Count Sort, 정렬 라이브러리](This-is-Coding-Test-Book/Sorting/Sorting.md)
+- ✅ Sorting
+  - [Quick Sort, Heap Sort, Count Sort, 정렬 라이브러리](This-is-Coding-Test-Book/Sorting/Sorting.md)
   
-- 이진 탐색 (Binary Search)
-  - [✅ 이진 탐색 - 재귀 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search1.py)  
-  - [✅ 이진 탐색 - 반복문 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search2.py)  
+- ✅ 이진 탐색 (Binary Search)
+  - [이진 탐색 - 재귀 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search1.py)  
+  - [이진 탐색 - 반복문 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search2.py)  
     
 - [✅ DP](DP/README.md)
 
 - [✅ Shortest Path](This-is-Coding-Test-Book/Shortest-Path/Shortest-Path.md)
-  - [✅ Dijkstra - 우선순위 큐 사용: O(E logV)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra1.py)
-  - [✅ Dijkstra - 선형 탐색 사용 : O(V^2)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra2.py)
-  - [✅ 플로이드 워셜 - 모든점 -> 모든 점 : O(V^3) ](This-is-Coding-Test-Book/Shortest-Path/Floyd-Warshall.py)
+  - [Dijkstra - 우선순위 큐 사용: O(E logV)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra1.py)
+  - [Dijkstra - 선형 탐색 사용 : O(V^2)](This-is-Coding-Test-Book/Shortest-Path/Dijkstra2.py)
+  - [플로이드 워셜 - 모든점 -> 모든 점 : O(V^3) ](This-is-Coding-Test-Book/Shortest-Path/Floyd-Warshall.py)
 
 - [✅ Graph](This-is-Coding-Test-Book/Graph/Graph.md)  
-  - [✅ 인접 행렬 & 인접 리스트](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)
-  - ✅ 서로소 집합 자료구조 (Disjoint Sets)
+  - [인접 행렬 & 인접 리스트](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)
+  - 서로소 집합 자료구조 (Disjoint Sets)
     - [구현 코드2 - 경로 압축 기법](This-is-Coding-Test-Book/Graph/Disjoint-Set2.py) (구현코드 1보다 중요!!) - 약 O(V + M logV)
     - [구현 코드1](This-is-Coding-Test-Book/Graph/Disjoint-Set1.py) - O(VM)
-  - [✅ 서로소 집합을 활용한 사이클 판별](This-is-Coding-Test-Book/Graph/Cycle-Judge.py)
-  - [✅ MST: Kruskal 알고리즘](This-is-Coding-Test-Book/Graph/Kruskal.py)
-  - [✅ 위상 정렬(Topology Sort)](This-is-Coding-Test-Book/Graph/Topology-Sort.py)
+  - [서로소 집합을 활용한 사이클 판별](This-is-Coding-Test-Book/Graph/Cycle-Judge.py)
+  - [MST: Kruskal 알고리즘](This-is-Coding-Test-Book/Graph/Kruskal.py)
+  - [위상 정렬(Topology Sort)](This-is-Coding-Test-Book/Graph/Topology-Sort.py)
 ---
 
 ## 📅 푼 문제 기록 (업데이트 중...)
