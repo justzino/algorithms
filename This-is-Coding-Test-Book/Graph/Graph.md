@@ -77,3 +77,10 @@
     - E개의 데이터를 정렬할 때의 시간복잡도
 - [구현 코드](This-is-Coding-Test-Book/Graph/Kruskal.py)
 
+
+# 위상 정렬(Topology Sort)
+- 방향 그래프의 모든 노드를 '방향성에 거스르지 않도록 순서대로 나열하는 것'  
+    > ex) 선수과목을 고려한 학습 순서 설정 (c언어 -> 자료구조 -> 알고리즘)
+- 즉, 선후 관계를 지키는 전체 순서 계산
+- 시간 복잡도: O(V + E)
+- [구현 코드](This-is-Coding-Test-Book/Graph/Topology-Sort.py)
