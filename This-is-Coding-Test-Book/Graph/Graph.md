@@ -43,5 +43,5 @@
 - Union & Find 연산
 - 트리 자료구조를 이용하여 집합 표현
 - 노드의 개수: V, find() or union() 개수: M
-- [구현 코드1](This-is-Coding-Test-Book/Graph/Disjoint-Set1.py) - O(VM)
-
+    - [구현 코드1](This-is-Coding-Test-Book/Graph/Disjoint-Set1.py) - O(VM)
+    - [구현 코드2 - 경로 압축 기법](This-is-Coding-Test-Book/Graph/Disjoint-Set2.py) - 약 O(V + M logV)
