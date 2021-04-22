@@ -10,6 +10,7 @@ for _ in range(m):
     graph[a].append(b)
     graph[b].append(a)
 
+# 거쳐갈 노드 X, 최종 목적지 노드 K
 x, k = map(int, input().split())
 
 
