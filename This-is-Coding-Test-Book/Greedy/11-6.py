@@ -1,3 +1,4 @@
+# 효율성 통과 못하는 풀이 - me
 from collections import deque
 
 
