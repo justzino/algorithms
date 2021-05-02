@@ -1,6 +1,6 @@
 def solution(s):
     n = len(s)
-    result = []
+    result = [n, ]
 
     for gap in range(1, n // 2 + 1):
         last = s[0: gap]    # 직전 문자열 block = 첫 block 초기화
