@@ -55,6 +55,12 @@ def solution(key, lock):
                 if lock[i][j] == 0:
                     locks.append((i, j))
 
+        if not locks:
+            return True
+
+        if not keys:
+            return False
+
         # key == 1 인 부분을 lock == 0 인 부분으로 move 할 (x, y) 구하기
         for k in keys:
             for l in locks:
