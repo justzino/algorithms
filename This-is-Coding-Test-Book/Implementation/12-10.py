@@ -77,7 +77,7 @@ def solution(key, lock):
         if not keys:
             return False
         
-        # 예외처리: lock 0 의 개수 보다 key 1의 개수가 적은 경우 
+        # 예외처리: lock 0 의 개수 보다 key 1의 개수가 적은 경우
         if len(keys) < len(locks):
             return False
 
