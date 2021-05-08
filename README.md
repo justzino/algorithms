@@ -2,16 +2,21 @@
 
 #### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
+## 자료구조 정리
+
+### [Deque](Deque.md)
+
+- push/pop 연산이 빈번한 알고리즘에서 list 보다 월등한 속도
+- [deque 문제](DataStructure/deque.md)
+
+
 ## 알고리즘 정리
-### Python
 
 - [✅ 입력 받기](in&out/In-Out.md)  
 - [✅ 예외 처리](in&out/Exception.md)   
 - [✅ 진법 다루기](math/Numeral-System.md)
 - [✅ 시간 복잡도](DataStructure/Time-Complexity.md)
 - [✅ 재귀 함수 depth](in&out/Recursion.md)
-  
-- [✅ Deque](Deque.md)
    
 - ✅ 구현하기
   - [좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
@@ -22,7 +27,6 @@
 - ✅ 파이썬 주요 라이브러리
   - [eval(), sorted(), itertools, heapq, bisect, collections, math](This-is-Coding-Test-Book/Python-Libraries.md)  
   - [순열과 조합 - itertools](math/Permutation-Combination.md)
-  - [deque](DataStructure/deque.md)
   - [dictionary, 문자 함수 (isupper / islower / isdigit), list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
   
 - ✅ BFS, DFS
@@ -58,7 +62,7 @@
 ## 📅 푼 문제 기록 
 
 <details markdown="1">
-<summary> 푼 문제 목록 (업데이트 중...) </summary>
+<summary> 푼 문제 목록 (업데이트 안함..) </summary>
 
 |                 |                                   1                                   |                                  2                                   |                                   3                                   |                                  4                                  |                                  5                                  |
 | :-------------: | :-------------------------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------------------------: | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: |
