@@ -6,7 +6,7 @@ def binary_search(array, target, start, end):
     mid = (start + end) // 2
     # 찾은 경우 중간점 인덱스 반환
     if array[mid] == target:
-        return min
+        return mid
 
     # 중간점의 값보다 찾는 값이 작은 경우 -> 왼쪽 확인
     elif target < array[mid]:
