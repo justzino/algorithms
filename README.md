@@ -2,6 +2,23 @@
 
 #### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
+## String 정리
+- str.split()
+- str.join()
+- str.replace()
+- str.find()
+- str.startswith()
+- str.endswith()
+- str.count()
+- str.index()
+- str.isalpha()	
+- str.isdigit()
+- str.islower()	
+- str.isupper()	
+- str.lower()	
+- str.upper()	
+- str.strip()
+
 ## 자료구조 정리
 
 ### [Deque](Deque.md)
