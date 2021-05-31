@@ -22,10 +22,14 @@
 
 ## 자료구조 정리
 
-### [Deque](Deque.md)
+### [List]()
 
+### [Deque](Deque.md)
 - push/pop 연산이 빈번한 알고리즘에서 list 보다 월등한 속도
 - [deque 문제](DataStructure/deque.md)
+
+### [Dictionary](DataStructure/DataStructure.md#dictionary-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80-%EB%B0%A9%EC%8B%9D)
+- [dictionary, list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
 
 
 ## 알고리즘 정리
@@ -43,9 +47,14 @@
   - [행렬 회전](This-is-Coding-Test-Book/Implementation/Rotate-a-Matrix.py)
 
 - ✅ 파이썬 주요 라이브러리
-  - [eval(), sorted(), itertools, heapq, bisect, collections, math](This-is-Coding-Test-Book/Python-Libraries.md)  
-  - [순열과 조합 - itertools](math/Permutation-Combination.md)
-  - [dictionary, 문자 함수 (isupper / islower / isdigit), list 문자열로 출력, asterisk(*)](DataStructure/DataStructure.md)   
+  - [eval()](This-is-Coding-Test-Book/Python-Libraries.md#eval) - 문자열 형식의 수학 수식 계산값 반환
+  - [sorted()](This-is-Coding-Test-Book/Python-Libraries.md#sorted) - iterable 객체 정렬값 반환
+  - [itertools](This-is-Coding-Test-Book/Python-Libraries.md#itertools) - 순열, 조합 등 반복 데이터 처리 라이브러리
+  - [itertools](math/Permutation-Combination.md) - 추가 설명
+  - [heapq](This-is-Coding-Test-Book/Python-Libraries.md#heapq) - 힙 (우선순위 큐)
+  - [bisect](This-is-Coding-Test-Book/Python-Libraries.md#bisect) - 이진 탐색
+  - [collections](This-is-Coding-Test-Book/Python-Libraries.md#collections) - deque, Counter
+  - [math](This-is-Coding-Test-Book/Python-Libraries.md#math)  - 팩토리얼, 제곱근, 최대공약수(GCD), pi
   
 - ✅ BFS, DFS
   - [인접 행렬 & 리스트 (Adjacent Matrix & List)](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
@@ -57,6 +66,7 @@
   - [Quick Sort, Heap Sort, Count Sort, 정렬 라이브러리](This-is-Coding-Test-Book/Sorting/Sorting.md)
   
 - ✅ 이진 탐색 (Binary Search)
+  - [이진 탐색 - 라이브러리](This-is-Coding-Test-Book/Python-Libraries.md#bisect)
   - [이진 탐색 - 재귀 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search1.py)  
   - [이진 탐색 - 반복문 (Binary Search)](This-is-Coding-Test-Book/Search/Binary-Search2.py)  
     
