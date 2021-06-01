@@ -1,10 +1,14 @@
-array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+def selection(data):
+    n = len(data)
+    for i in range(n-1):
+        smallest = i
+        for j in range(i + 1, n):
+            if data[smallest] > data[j]:
+                smallest = j
+        data[i], data[smallest] = data[smallest], data[i]
 
-for i in range(len(array)):
-    min_index = i   # 가장 작은원소의 인덱스
-    for j in range(i+1, len(array)):
-        if array[min_index] > array[j]:
-            min_index = j
-    array[i], array[min_index] = array[min_index], array[i]     # swap
+
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 3]
+selection(array)
 
 print(array)

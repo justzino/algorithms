@@ -63,6 +63,12 @@
   - [DFS & BFS 예시](DFS-BFS/1260.py)  
   
 - ✅ Sorting
+  - [Bubble Sort](This-is-Coding-Test-Book/Sorting/Bubble-Sort.py)
+  - [Selection Sort](This-is-Coding-Test-Book/Sorting/Selection-Sort.py)
+  - [Insertion Sort](This-is-Coding-Test-Book/Sorting/Insertion-Sort.py)
+  - [Quick Sort](This-is-Coding-Test-Book/Sorting/Quick-Sort.py)
+  - [Quick Sort - 전통 방식](This-is-Coding-Test-Book/Sorting/Quick-Sort1.py)
+  - [Quick Sort - Python 최적화](This-is-Coding-Test-Book/Sorting/Quick-Sort2.py)
   - [Quick Sort, Heap Sort, Count Sort, 정렬 라이브러리](This-is-Coding-Test-Book/Sorting/Sorting.md)
   
 - ✅ 이진 탐색 (Binary Search)
