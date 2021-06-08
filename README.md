@@ -18,7 +18,6 @@
 - str.lower()	
 - str.upper()	
 - str.strip()
-- 정리중...
 
 ## 자료구조 정리
 
