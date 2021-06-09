@@ -54,6 +54,7 @@
   - [bisect](This-is-Coding-Test-Book/Python-Libraries.md#bisect) - 이진 탐색
   - [collections](This-is-Coding-Test-Book/Python-Libraries.md#collections) - deque, Counter
   - [math](This-is-Coding-Test-Book/Python-Libraries.md#math)  - 팩토리얼, 제곱근, 최대공약수(GCD), pi
+  - [zip](zip.md) - 여러 iterable 의 각 객체를 모아 tuple 로
   
 - ✅ BFS, DFS
   - [인접 행렬 & 리스트 (Adjacent Matrix & List)](This-is-Coding-Test-Book/DFS-BFS/Adjacency.py)  
