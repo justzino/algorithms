@@ -14,7 +14,7 @@ def solution(new_id):
             continue
 
     # 3단계
-    while answer.find("..") != -1:
+    while ".." in answer:
         answer = answer.replace("..", '.')
 
         # 4, 5단계
