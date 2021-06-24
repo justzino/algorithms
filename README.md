@@ -3,21 +3,67 @@
 #### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
 ## String 정리
-- str.split()
-- str.join()
-- str.replace()
-- str.find()
-- str.startswith()
-- str.endswith()
-- str.count()
-- str.index()
-- str.isalpha()	
-- str.isdigit()
-- str.islower()	
-- str.isupper()	
-- str.lower()	
-- str.upper()	
-- str.strip()
+chr(65) = 'A', chr(97) = 'a'
+ord('A') = 65, ord('a') = 97
+
+|                     Method                     |                          Return (대 소문자 구분)                          |                                                                              Ex                                                                               |
+| :--------------------------------------------: | :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                  str.split()                   |                  문자열을 기준에 따라 나눠 list로 return                  |                                                  str = 'Hello World' <br> str.split() -> ['Hello', 'World']                                                   |
+|                  str.strip()                   |               문자열의 양쪽 끝에 해당 문자가 있으면 지운다                |                                                          str = '.abc.' <br> str.strip('.') -> 'abc'                                                           |
+|                   str.join()                   |           string을 list파라미터의 중간에 넣어 합친 str로 return           |                          a = ['Hello', 'World'] <br> ' '.join(a) -> 'Hello World' <br> str = 'abc' <br> str.join('123') -> 1abc2abc3                          |
+|                 str.replace()                  | 특정 부분을 바꾼 후 string을 return <br> 특정 부분이 없다면 그대로 return |                                           str = 'Hello World' <br> str.replace('World', 'Python') -> 'Hello Python'                                           |
+|        str.find(문자열, 찾기시작할위치)        |         매개변수로 입력한 문자열의 return index 없으면 return -1          |                               str = 'aa bb aa bb' <br> str.find('bb') -> 3 <br> str.find('bb', 4) -> 9 <br> str.find('h') -> -1                               |
+|        str.startswith(문자열, 시작지점)        |          매개변수로 문자열이 시작하면 True, 그렇지 않으면 False           |                   str = 'aabbaa' <br> str.startswith('aa') -> True <br> str.startswith('AA') -> False <br> str.startswith('aa', 4) -> True                    |
+| str.endswith(문자열, 문자열의시작, 문자열의끝) |        매개변수로 문자열이 끝나면 True, 그렇지 않으면 return False        |                                      str = 'World' <br> str.endswith('l') -> False <br> str.endswith('l', 0, 4) -> True                                       |
+|                  str.count()                   |                  매개변수의 문자열이 몇개 있는지 return                   |                                   str = 'Hello' <br> str.count('l') -> 2 <br> str.count('ll') -> 1 <br> str.count('x') -> 0                                   |
+|                  str.index()                   |                     find와 동일하나 없으면 ValueError                     |                                     str = 'abc가나다123' <br> str.index('가나다') -> 4 <br> str.index('d') -> ValueError                                      |
+|                 str.isalpha()                  |          문자열이 영어, 한글로만 이루어졌으면 True 아니면 False           |                               str = 'abc가나다' <br> str.isalpha() -> True <br> str = 'abc 가나다' <br> str.isalpha() -> False                                |
+|                 str.isdigit()                  |             문자열이 숫자로만 이루어졌으면 True 아니면 False              |                                      str = '123' <br> str.isdigit() -> True <br> str = '1 23'<br> str.isdigit() -> False                                      |
+|                 str.isalnum()                  |       문자열이 영어, 한글, 숫자로만 이루어졌으면 True 아니면 False        |                              str = 'abc가나다123' <br> str.isalnum() -> True <br> str = 'ab 가나 12' <br> str.isalnum() -> False                              |
+|                 str.islower()                  |      문자열 중 알파벳이 모두 소문자로만 되어졌으면 True 아니면 False      | str = 'abc 123 가나다' <br> str.islower() -> True <br> str = 'Abc 123 가나다' <br> str.islower() -> False <br> str = '123 가나다' <br> str.islower() -> False |
+|                 str.isupper()                  |      문자열 중 알파벳이 모두 대문자로만 되어졌으면 True 아니면 False      | str = 'ABC 123 가나다' <br> str.isupper() -> True <br> str = 'aBC 123 가나다' <br> str.isupper() -> False <br> str = '123 가나다' <br> str.isupper() -> False |
+|                  str.lower()                   |                        문자열을 모두 소문자로 변환                        |                                                  str = 'Abc 123 가나다' <br> str.lower() -> 'abc 123 가나다'                                                  |
+|                  str.upper()                   |                        문자열을 모두 대문자로 변환                        |                                                  str = 'Abc 123 가나다' <br> str.upper() -> 'ABC 123 가나다'                                                  |
+|                   str[::-1]                    |                              문자열을 뒤집기                              |                                                              str = 'abc' <br> str[::-1] -> 'cba'                                                              |
+
+## 정규표현식 정리
+
+|  정규 표현식   | 동일 표현식 |                의미                | 예시                 |
+| :------------: | :---------: | :--------------------------------: | -------------------- |
+|       -        |             |        두 문자 사이의 범위         |                      |
+|       ^        |             |                not                 |                      |
+|    [a-zA-Z]    |             |            알파벳 모두             |                      |
+|     [0-9]      |     \d      |                숫자                |                      |
+|     [^0-9]     |     \D      |          숫자가 아닌 문자          |                      |
+| [ \t\n\r\f\v]  |     \s      |          whitespace 문자           |                      |
+| [^ \t\n\r\f\v] |     \S      |    whitespace 문자가 아닌 문자     |                      |
+|  [a-zA-Z0-9_]  |     \w      |             문자+숫자              |                      |
+| [^a-za-z0-9_]  |     \W      |       문자+숫자가 아닌 문자        |                      |
+|       .        |             |       \n을 제외한 모든 문자        |                      |
+|      a.b       |             |       "a" + "모든문자" + "b"       | "aab", "a0b", "abc"  |
+|     a[.]b      |             |               "a.b"                |                      |
+|       \*       |    {0,}     |           0번 이상 반복            |                      |
+|       +        |    {1,}     |           1번 이상 반복            |                      |
+|     ca\*t      |   ca{0,}t   |      "c" + "a 0개 이상" + "t"      | "ct", "cat", "caaat" |
+|      ca+t      |   ca{1,}t   |      "c" + "a 1개 이상" + "t"      | "cat", "caaat"       |
+|      {m}       |             |          반드시 m번 반복           |                      |
+|     {m, n}     |             |            m ~ n번 반복            |                      |
+|       ?        |   {0, 1}    |         1번 있거나 없거나          |                      |
+|     ca{2}t     |             |          "c" + "aa" + "t"          | "caat"               |
+|    ca{2,5}t    |             |    "c" + "a(2~5회 반복)" + "t"     | "caat", "caaaaat"    |
+|      ab?c      |             | "a" + "b(1번 있거나 없거나)" + "c" | "ac", "abc"          |
+
+### 정규표현식을 이용한 문자열 검색
+```python
+import re
+p = re.compile('ab*')
+```
+|     Method | 목적                                                                    |
+| ---------: | ----------------------------------------------------------------------- |
+|    match() | 문자열의 처음부터 정규식과 매치되는지 조사한다.                         |
+|   search() | 문자열 전체를 검색하여 정규식과 매치되는지 조사한다.                    |
+|  findall() | 정규식과 매치되는 모든 문자열(substring)을 리스트로 돌려준다.           |
+| finditer() | 정규식과 매치되는 모든 문자열(substring)을 반복 가능한 객체로 돌려준다. |
 
 ## 자료구조 정리
 
@@ -547,5 +593,6 @@
 ## Reference
 
 - https://github.com/CodeTest-StudyGroup/Code-Test-Study.git
+- https://wikidocs.net/4308
 - [백준](https://code.plus/course/41)
 - [블로그](https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
