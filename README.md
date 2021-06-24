@@ -8,6 +8,7 @@ ord('A') = 65, ord('a') = 97
 
 |                     Method                     |                        Return type : 설명 (대 소문자 구분)                        |                                                                              Ex                                                                               |
 | :--------------------------------------------: | :-------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                    len(str)                    |                                int : 문자열의 길이                                |                                                            str = 'Hello World' <br> len(str) -> 11                                                            |
 |                  str.split()                   |                     list : 문자열을 기준에 따라 나누어 return                     |                                                  str = 'Hello World' <br> str.split() -> ['Hello', 'World']                                                   |
 |                  str.strip()                   |           string : 문자열의 양쪽 끝에 해당 문자가 있으면 지운 후 return           |                                                          str = '.abc.' <br> str.strip('.') -> 'abc'                                                           |
 |                   str.join()                   |            string : string을 list파라미터의 중간에 넣어 합친후 return             |                          a = ['Hello', 'World'] <br> ' '.join(a) -> 'Hello World' <br> str = 'abc' <br> str.join('123') -> 1abc2abc3                          |
@@ -25,6 +26,8 @@ ord('A') = 65, ord('a') = 97
 |                  str.lower()                   |                       string : 문자열을 모두 소문자로 변환                        |                                                  str = 'Abc 123 가나다' <br> str.lower() -> 'abc 123 가나다'                                                  |
 |                  str.upper()                   |                       string : 문자열을 모두 대문자로 변환                        |                                                  str = 'Abc 123 가나다' <br> str.upper() -> 'ABC 123 가나다'                                                  |
 |                   str[::-1]                    |                             string : 문자열을 뒤집기                              |                                                              str = 'abc' <br> str[::-1] -> 'cba'                                                              |
+|                str.capitalize()                |                string : 문자열의 첫 글자를 대문자로 바꾸어 return                 |                                                  str = 'hello world' <br> str.capitalize() -> 'Hello world'                                                   |
+|                  str.title()                   |           string : 문자열에서 알파벳의 첫 글자를 대문자로 바꾸어 return           |                                                 str = 'hello wo세상rld' <br> str.title() -> 'Hello Wo세상Rld'                                                 |
 
 ## 정규표현식 정리
 
