@@ -106,7 +106,61 @@ charref2 = re.compile(r"""
 # 백슬래시 문제
 # '\section' 문자열을 찾기 위해서는?
 p1 = re.compile('\\section')
-
 # '\\section' 문자열을 찾기 위해서는?
 p2 = re.compile('\\\\section')  # 너무 복잡
 p3 = re.compile(r'\\section')   # raw string 사용
+
+
+# 문자열 소비 없는 메타 문자 : |, ^, $, \A, \Z, \b, \B
+# | : or
+p = re.compile('Crow|Servo')
+m = p.match('CrowHello')
+print(m)
+print(re.search('^Life', 'Life is too short'))
+print(re.search('^Life', 'My Life'))
+# <re.Match object; span=(0, 4), match='Crow'>
+# <re.Match object; span=(0, 4), match='Life'>
+# None
+
+
+# 그루핑 : ( )
+# group(0) : 매치된 전체 문자열
+# group(n) : n 번째 그룹에 해당하는 문자열
+
+p = re.compile(r"\w+\s+\d+[-]\d+[-]\d+")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+
+p = re.compile(r"(\w+)\s+\d+[-]\d+[-]\d+")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+print(m.group(1))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+# park
+
+p = re.compile(r"(\w+)\s+(\d+[-]\d+[-]\d+)")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+print(m.group(1))
+print(m.group(2))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+# park
+# 010-1234-1234
+
+p = re.compile(r"(\w+)\s+((\d+)[-]\d+[-]\d+)")
+m = p.search('park 010-1234-1234')
+print(m.group(0))
+print(m.group(1))
+print(m.group(2))
+print(m.group(3))
+# park 010-1234-1234
+# park
+# 010-1234-1234
+# 010
