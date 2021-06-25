@@ -29,7 +29,7 @@ ord('A') = 65, ord('a') = 97
 |                str.capitalize()                |                string : 문자열의 첫 글자를 대문자로 바꾸어 return                 |                                                  str = 'hello world' <br> str.capitalize() -> 'Hello world'                                                   |
 |                  str.title()                   |           string : 문자열에서 알파벳의 첫 글자를 대문자로 바꾸어 return           |                                                 str = 'hello wo세상rld' <br> str.title() -> 'Hello Wo세상Rld'                                                 |
 
-## 정규표현식 정리
+## [정규표현식 정리](Regular-Expression.py)
 
 |  정규 표현식   | 동일 표현식 |                의미                | 예시                 |
 | :------------: | :---------: | :--------------------------------: | -------------------- |
@@ -70,7 +70,7 @@ p = re.compile('ab*')
 
 ## 자료구조 정리
 
-### [List]()
+### [List]
 
 ### [Deque](Deque.md)
 - push/pop 연산이 빈번한 알고리즘에서 list 보다 월등한 속도
