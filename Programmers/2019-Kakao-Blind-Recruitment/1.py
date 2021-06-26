@@ -1,22 +1,17 @@
 def solution(N, stages):
-    # stage, 실패, 누적도전자, 실패율
-    level = [[i, 0, 0, 0] for i in range(N + 2)]
-    n_people = len(stages)
+    level = [0 for _ in range(N + 2)]  # stage 별 실패자
+    n_people = [0, len(stages)]  # stage 별 도전자
+    rate = {}  # stage: 실패율
 
-    for i in stages:
-        level[i][1] += 1
+    for stage in stages:
+        level[stage] += 1
 
-    level[1][2] = n_people
-    level[1][3] = level[1][1] / n_people
-    for i in range(2, N + 2):
-        level[i][2] = level[i - 1][2] - level[i - 1][1]
+    rate[1] = (level[1] / n_people[1])
+    for i in range(2, N + 1):
+        n_people.append(n_people[i - 1] - level[i - 1])
         try:
-            level[i][3] = level[i][1] / level[i][2]
+            rate[i] = level[i] / n_people[i]
         except ZeroDivisionError:
-            level[i][3] = 0
+            rate[i] = 0
 
-    level = level[1:-1]
-    level.sort(key=lambda x: x[3], reverse=True)
-    answer = [x[0] for x in level]
-
-    return answer
+    return sorted(rate, key=lambda x: -rate[x])
