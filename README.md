@@ -28,6 +28,10 @@ ord('A') = 65, ord('a') = 97
 |                   str[::-1]                    |                             string : 문자열을 뒤집기                              |                                                              str = 'abc' <br> str[::-1] -> 'cba'                                                              |
 |                str.capitalize()                |                string : 문자열의 첫 글자를 대문자로 바꾸어 return                 |                                                  str = 'hello world' <br> str.capitalize() -> 'Hello world'                                                   |
 |                  str.title()                   |           string : 문자열에서 알파벳의 첫 글자를 대문자로 바꾸어 return           |                                                 str = 'hello wo세상rld' <br> str.title() -> 'Hello Wo세상Rld'                                                 |
+|          str.rjust(문자열 길이, 문자)          |          string : 오른쪽 정렬, 문자열 왼쪽에 입력한 문자로 채워서 return          |                                                         str = 'abc' <br> str.rjust(5, '#') -> '##abc'                                                         |
+|          str.ljust(문자열 길이, 문자)          |          string : 왼쪽 정렬, 문자열 오른쪽에 입력한 문자로 채워서 return          |                                                         str = 'abc' <br> str.ljust(5, '#') -> 'abc##'                                                         |
+|             str.zfill(문자열 길이)             |                        string : 0으로 왼쪽을 채워서 return                        |                                                           str = 'abc' <br> str.zfill(5) -> '00abc'                                                            |
+
 
 ## [정규표현식 정리](Regular-Expression.py)
 
