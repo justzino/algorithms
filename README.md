@@ -3,7 +3,7 @@
 #### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
 ## 문자열 정리
-### [String](String.md)
+### [String](String.md) - 진법 및 아스키코드 변환, string Method
 ### [정규표현식 정리](Regular-Expression.md)
 
 ## 자료구조 정리
