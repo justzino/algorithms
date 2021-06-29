@@ -1,0 +1,254 @@
+# 정규표현식 정리
+
+|  정규 표현식   | 동일 표현식 |                의미                | 예시                 |
+| :------------: | :---------: | :--------------------------------: | -------------------- |
+|       -        |             |        두 문자 사이의 범위         |                      |
+|       ^        |             |                not                 |                      |
+|    [a-zA-Z]    |             |            알파벳 모두             |                      |
+|     [0-9]      |     \d      |                숫자                |                      |
+|     [^0-9]     |     \D      |          숫자가 아닌 문자          |                      |
+| [ \t\n\r\f\v]  |     \s      |          whitespace 문자           |                      |
+| [^ \t\n\r\f\v] |     \S      |    whitespace 문자가 아닌 문자     |                      |
+|  [a-zA-Z0-9_]  |     \w      |             문자+숫자              |                      |
+| [^a-za-z0-9_]  |     \W      |       문자+숫자가 아닌 문자        |                      |
+|       .        |             |       \n을 제외한 모든 문자        |                      |
+|      a.b       |             |       "a" + "모든문자" + "b"       | "aab", "a0b", "abc"  |
+|     a[.]b      |             |               "a.b"                |                      |
+|       \*       |    {0,}     |           0번 이상 반복            |                      |
+|       +        |    {1,}     |           1번 이상 반복            |                      |
+|     ca\*t      |   ca{0,}t   |      "c" + "a 0개 이상" + "t"      | "ct", "cat", "caaat" |
+|      ca+t      |   ca{1,}t   |      "c" + "a 1개 이상" + "t"      | "cat", "caaat"       |
+|      {m}       |             |          반드시 m번 반복           |                      |
+|     {m, n}     |             |            m ~ n번 반복            |                      |
+|       ?        |   {0, 1}    |         1번 있거나 없거나          |                      |
+|     ca{2}t     |             |          "c" + "aa" + "t"          | "caat"               |
+|    ca{2,5}t    |             |    "c" + "a(2~5회 반복)" + "t"     | "caat", "caaaaat"    |
+|      ab?c      |             | "a" + "b(1번 있거나 없거나)" + "c" | "ac", "abc"          |
+
+### 정규표현식을 이용한 문자열 검색
+```python
+import re
+p = re.compile('ab*')
+```
+|     Method | 목적                                                                    |
+| ---------: | ----------------------------------------------------------------------- |
+|    match() | 문자열의 처음부터 정규식과 매치되는지 조사한다.                         |
+|   search() | 문자열 전체를 검색하여 정규식과 매치되는지 조사한다.                    |
+|  findall() | 정규식과 매치되는 모든 문자열(substring)을 리스트로 돌려준다.           |
+| finditer() | 정규식과 매치되는 모든 문자열(substring)을 반복 가능한 객체로 돌려준다. |
+
+
+## [정규표현식 사용 예](Regular-Expression.py)
+### 문자열 검색 method: match(), search(), findall(), finditer()
+```python
+import re
+
+p = re.compile('[a-z]+')
+
+m1 = p.match("python")
+m2 = p.match("3 python")
+m3 = p.search("python")
+m4 = p.search("3 python")
+print(m1)
+print(m2)
+print(m3)
+print(m4)
+```
+`<re.Match object; span=(0, 6), match='python'>`  
+`None`  
+`<re.Match object; span=(0, 6), match='python'>`  
+`<re.Match object; span=(2, 8), match='python'>`  
+
+```python
+import re
+
+p = re.compile('[a-z]+')
+
+result1 = p.findall("life is too short")
+result2 = p.finditer("life is too short")
+print(result1)
+print(result2)
+print(*result2, sep='\n')
+```
+`['life', 'is', 'too', 'short']`  
+`<callable_iterator object at 0x0000025A78D0B0C8>`  
+`<re.Match object; span=(0, 4), match='life'>`  
+`<re.Match object; span=(5, 7), match='is'>`  
+`<re.Match object; span=(8, 11), match='too'>`  
+`<re.Match object; span=(12, 17), match='short'>`  
+
+
+### match 객체의 method: group(), start(), end(), span()
+```python
+import re
+
+p = re.compile('[a-z]+')
+
+m = p.match("python")
+print(m.group())
+print(m.start())
+print(m.end())
+print(m.span())
+```
+`python`  
+`0`  
+`6`  
+`(0, 6)`  
+
+```python
+import re
+
+p = re.compile('[a-z]+')
+
+m = p.search("3 python")
+print(m.group())
+print(m.start())
+print(m.end())
+print(m.span())
+```
+`python`  
+`2`  
+`8`  
+`(2, 8)`  
+
+### compile 옵션
+
+1. DOTALL, S 옵션
+```python
+import re
+
+p1 = re.compile('a.b')
+p2 = re.compile('a.b', re.DOTALL)
+m1 = p1.match('a\nb')
+m2 = p2.match('a\nb')
+print(m1)
+print(m2)
+```
+`None`  
+`<re.Match object; span=(0, 3), match='a\nb'>`  
+
+
+2. IGNORECASE, I 옵션
+```python
+import re
+
+p = re.compile('[a-z]', re.I)
+m1 = p.match('python')
+m2 = p.match('Python')
+m3 = p.match('PYTHON')
+print(m1)
+print(m2)
+print(m3)
+```
+`<re.Match object; span=(0, 1), match='p'>`  
+`<re.Match object; span=(0, 1), match='P'>`  
+`<re.Match object; span=(0, 1), match='P'>`  
+
+
+3. MULTILINE, M 옵션
+```python
+import re
+
+p = re.compile("^python\s\w+")
+p2 = re.compile("^python\s\w+", re.M)
+
+data = """python one life is too short
+python two you need python
+python three"""
+
+print(p.findall(data))
+print(p2.findall(data))
+```
+`['python one']`  
+`['python one', 'python two', 'python three']`  
+
+
+4. VERBOSE, X 옵션
+   - 문자열에 사용된 whitexpace는 컴파일할 때 제거 (단[] 안에 사용한 whitespace는 제외)
+```python
+import re
+
+charref1 = re.compile(r'&[#](0[0-7]+|[0-9]+|x[0-9a-fA-F]+);')
+charref2 = re.compile(r"""
+    &[#]                # Start of a numeric entity reference
+    (
+     0[0-7]+         # Octal form
+    | [0-9]+          # Decimal form
+    | x[0-9a-fA-F]+   # Hexadecimal form
+    )
+    ;                   # Trailing semicolon
+""", re.VERBOSE)
+```
+
+### 백슬래시 문제
+```python
+import re
+
+# '\section' 문자열을 찾기 위해서는?
+p1 = re.compile('\\section')
+# '\\section' 문자열을 찾기 위해서는?
+p2 = re.compile('\\\\section')  # 너무 복잡
+p3 = re.compile(r'\\section')   # raw string 사용
+```
+
+### 문자열 소비 없는 메타 문자 : |, ^, $, \A, \Z, \b, \B
+#### | : or
+```python
+import re
+
+p = re.compile('Crow|Servo')
+m = p.match('CrowHello')
+print(m)
+print(re.search('^Life', 'Life is too short'))
+print(re.search('^Life', 'My Life'))
+```
+`<re.Match object; span=(0, 4), match='Crow'>`  
+`<re.Match object; span=(0, 4), match='Life'>`  
+`None`  
+
+
+### 그루핑 : ( )
+- group(0) : 매치된 전체 문자열
+- group(n) : n 번째 그룹에 해당하는 문자열
+
+```python
+import re
+
+p = re.compile(r"\w+\s+\d+[-]\d+[-]\d+")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+
+p = re.compile(r"(\w+)\s+\d+[-]\d+[-]\d+")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+print(m.group(1))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+# park
+
+p = re.compile(r"(\w+)\s+(\d+[-]\d+[-]\d+)")
+m = p.search('park 010-1234-1234')
+print(m)
+print(m.group(0))
+print(m.group(1))
+print(m.group(2))
+# <re.Match object; span=(0, 18), match='park 010-1234-1234'>
+# park 010-1234-1234
+# park
+# 010-1234-1234
+
+p = re.compile(r"(\w+)\s+((\d+)[-]\d+[-]\d+)")
+m = p.search('park 010-1234-1234')
+print(m.group(0))
+print(m.group(1))
+print(m.group(2))
+print(m.group(3))
+# park 010-1234-1234
+# park
+# 010-1234-1234
+# 010
+```
