@@ -115,8 +115,8 @@ p = re.compile('ab*')
   - [itertools](This-is-Coding-Test-Book/Python-Libraries.md#itertools) - 순열, 조합 등 반복 데이터 처리 라이브러리
   - [itertools](math/Permutation-Combination.md) - 추가 설명
   - [heapq](This-is-Coding-Test-Book/Python-Libraries.md#heapq) - 힙 (우선순위 큐)
-  - [collections](This-is-Coding-Test-Book/Python-Libraries.md#collections) - deque, Counter
   - [bisect](This-is-Coding-Test-Book/Python-Libraries.md#bisect) - 이진 탐색, insort()
+  - [collections](This-is-Coding-Test-Book/Python-Libraries.md#collections) - deque, Counter, defaultdict
   - [math](This-is-Coding-Test-Book/Python-Libraries.md#math)  - 팩토리얼, 제곱근, 최대공약수(GCD), pi
   - [zip](zip.md) - 여러 iterable 의 각 객체를 모아 tuple 로
   

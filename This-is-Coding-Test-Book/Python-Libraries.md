@@ -233,20 +233,40 @@ print(list(data))   # 리스트 자료형으로 변환
 
 ### Counter
 - 등장 횟수를 세는 기능 제공
-- 리스트와 같은 iterable 객체가 주어졌을 때, 해당 객체 내부의 원소가 몇번씩 등장했는지를 알려준다.
+- iterable 객체가 주어졌을 때, 해당 객체 내부의 원소가 등장한 횟수를 dict 형태로 반환
 - 원소별 등장 횟수를 세는 기능이 필요할 때 사용
 ```python
 from collections import Counter
 
 counter = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
 
+print(counter)
+print(dict(counter))        # 사전 자료형으로 변환
 print(counter['blue'])      # 'blue'가 등장한 횟수 출력
 print(counter['green'])     # 'green'이 등장한 횟수 출력
-print(dict(counter))        # 사전 자료형으로 변환
 ```
+`Counter({'blue': 3, 'red': 2, 'green': 1})`
+`{'red': 2, 'blue': 3, 'green': 1}`  
 `3`  
 `1`  
-`{'red': 2, 'blue': 3, 'green': 1}`  
+
+### defaultdict
+- dictionary 를 사용하다 보면 어떤 키(key)에 대한 값(value)이 없는 경우에 대한 처리를 해야하는 경우가 자주 발생한다.
+- 이런 경우 defaultdict를 사용하여 dict 의 default 값을 설정할 수 있다.
+
+#### dictionary 의 value 로 list 사용
+```python
+from collections import defaultdict
+
+a = [(100, 'b'), (40, 'f', ), (100, 'a'), (80, 'e'), (100, 'c'), (60, 'g'), (40, 'h'), (80, 'd')]
+
+result = defaultdict(list)
+for key, value in a:
+    result[key].append(value)
+
+print(result)
+```
+`defaultdict(<class 'list'>, {100: ['b', 'a', 'c'], 40: ['f', 'h'], 80: ['e', 'd'], 60: ['g']})`
 
 ---
 
