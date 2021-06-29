@@ -19,8 +19,7 @@ def solution(info, query):
 
         for i in range(16):
             case = bin(i)[2:].zfill(4)
-            string = str(tmp[0] * int(case[0])) + str(tmp[1] * int(case[1])) + str(tmp[2] * int(case[2])) + str(
-                tmp[3] * int(case[3]))
+            string = str(tmp[0] * int(case[0])) + str(tmp[1] * int(case[1])) + str(tmp[2] * int(case[2])) + str(tmp[3] * int(case[3]))
             try:
                 table[string].append(score)
             except:
