@@ -156,11 +156,13 @@ print(result)
 ---
 
 ## bisect
+
+### bisect_left, bisect_right
 - 이진 탐색을 쉽게 구현하기 위한 라이브러리
 - '정렬된 배열'에서 특정한 원소를 찾아야 할 때 매우 효과적으로 사용된다.
 - `bisect_left(a, x)`: 정렬된 순서를 유지하면서 리스트 a에 데이터 x를 삽입할 가장 왼쪽 인덱스를 찾는 메서드
 - `bisect_right(a, x)`: 정렬된 순서를 유지하도록 리스트 a에 데이터 x를 삽입할 가장 오른쪽 인덱스를 찾는 메서드
-- ex) 정렬된 리스트 [1, 2, 4, 4, 8]이 있을 때, 새로 데이터 4를 삽입
+- ex) 정렬된 리스트 [1, 2, 4, 4, 8]이 있을 때, 새로 데이터 4를 삽입할 인덱스
 ```python
 from bisect import bisect_left, bisect_right
 
@@ -196,6 +198,18 @@ print(count_by_range(a, -1, 3))
 ```
 `2`   
 `6`
+
+### insort
+bisect.insort 는 정렬될 수 있는 위치에 해당 항목을 삽입한다.
+```python
+from bisect import insort 
+
+a = [60, 70, 80, 90]
+insort(a, 85)
+print(a)
+```
+`[60, 70, 80, 85, 90]`
+
 
 ---
 
