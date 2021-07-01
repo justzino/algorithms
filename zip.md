@@ -16,9 +16,8 @@ y = [4, 5, 6]
 result = zip(x, y)
 print(list(result))
 ```
-```
-[(1, 4), (2, 5), (3, 6)]
-```
+`[(1, 4), (2, 5), (3, 6)]`
+
 case 2.
 ```python
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
@@ -27,6 +26,7 @@ for each in zip(*matrix):
     result.append(list(each))
 print(result)
 ```
+`[[1, 4, 7, 10], [2, 5, 8, 11], [3, 6, 9, 12]]`
 
 ### 2. Dictionary 에서 value 기준 최소, 최대값 구하기
 
