@@ -1,17 +1,27 @@
-def solution(N, stages):
-    level = [0 for _ in range(N + 2)]  # stage 별 실패자
-    n_people = [0, len(stages)]  # stage 별 도전자
-    rate = {}  # stage: 실패율
+from collections import defaultdict
 
-    for stage in stages:
-        level[stage] += 1
+commands_set = {'Enter': '님이 들어왔습니다.', 'Leave': '님이 나갔습니다.'}
 
-    rate[1] = (level[1] / n_people[1])
-    for i in range(2, N + 1):
-        n_people.append(n_people[i - 1] - level[i - 1])
-        try:
-            rate[i] = level[i] / n_people[i]
-        except ZeroDivisionError:
-            rate[i] = 0
 
-    return sorted(rate, key=lambda x: -rate[x])
+def solution(record):
+    name_dict = defaultdict(str)
+    record_by_id = []
+
+    for string in record:
+        string = string.split()
+        command = string[0]
+        uid = string[1]
+
+        if len(string) != 2:
+            name_dict[uid] = string[2]
+
+        record_by_id.append((uid, command))
+
+    result = []
+    for uid, command in record_by_id:
+        if command == 'Change':
+            continue
+        else:
+            result.append(name_dict[uid] + commands_set[command])
+
+    return result
