@@ -1,10 +1,7 @@
-from collections import defaultdict
-
-commands_set = {'Enter': '님이 들어왔습니다.', 'Leave': '님이 나갔습니다.'}
-
-
 def solution(record):
-    name_dict = defaultdict(str)
+    commands_set = {'Enter': '님이 들어왔습니다.', 'Leave': '님이 나갔습니다.'}
+
+    name_dict = dict()
     record_by_id = []
 
     for string in record:
