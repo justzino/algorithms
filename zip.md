@@ -28,7 +28,12 @@ print(result)
 ```
 `[[1, 4, 7, 10], [2, 5, 8, 11], [3, 6, 9, 12]]`
 
-### 2. Dictionary 에서 value 기준 최소, 최대값 구하기
+### 2. zip을 활용하여 딕셔너리 쉽게 만드는 방법
+```python
+my_dict1 = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+```
+
+### 3. Dictionary 에서 value 기준 최소, 최대값 구하기
 
 ```python
 tmp = {'database': 5, 'network': 3, 'os': 1, 'security': 2}
@@ -43,7 +48,7 @@ print(max_tmp)
 (5, 'database')
 ```
  
-### 3. Dictionary 를 value 기준으로 정렬하기
+### 4. Dictionary 를 value 기준으로 정렬하기
 방법 1.
 ```python
 tmp = {'database': 5, 'network': 3, 'os': 1, 'security': 2}

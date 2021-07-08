@@ -9,7 +9,11 @@
 
 ## [deque](deque.md)
 
-## dictionary 를 사용하는 여러가지 방식
+## dictionary
+### zip을 활용하여 딕셔너리 만드는 방법
+my_dict1 = dict(zip(['one', 'two', 'three'], [1,2,3]))
+
+### dictionary 를 사용하는 여러가지 방식
 1935, 1918번 참고
 
 ```python
