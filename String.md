@@ -19,7 +19,7 @@ def numeral_system(number, base):
     q, r = divmod(number, base)
     n = NOTATION[r]
     
-    if not q:
+    if q == 0:
         return n
     
     return numeral_system(q, base) + n 
