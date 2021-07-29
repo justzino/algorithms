@@ -11,6 +11,20 @@
 |     oct()      |        string : 8진수 문자열로 변환         |   oct(10) = '0o12', oct(0xa) = '0o12'    |
 |     hex()      |        string : 16진수 문자열로 변환        |    hex(10) = '0xa', hex(0o12) = '0xa'    |
 
+#### 10진수 -> n 진수
+```python
+NOTATION = '0123456789ABCDEF'
+
+def numeral_system(number, base):
+    q, r = divmod(number, base)
+    n = NOTATION[r]
+    
+    if not q:
+        return n
+    
+    return numeral_system(q, base) + n 
+```
+
 
 ### string Method
 
