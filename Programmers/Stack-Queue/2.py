@@ -3,8 +3,7 @@ from collections import deque
 
 def solution(priorities, location):
     nums_sorted = sorted(priorities)
-
-    q = deque([(priorities[i], i) for i in range(len(priorities))])
+    q = deque([(p, i) for i, p in enumerate(priorities)])
 
     answer = 1
     while True:
