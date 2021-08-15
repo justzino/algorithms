@@ -51,6 +51,7 @@
   - [DFS & BFS 예시](DFS-BFS/1260.py)  
   
 - ✅ Sorting
+  - [계수 정렬, 기수 정렬] - O(N logN) 보다 작은 Time complexity를 갖는 sorting 기법
   - [Bubble Sort](This-is-Coding-Test-Book/Sorting/Bubble-Sort.py)
   - [Selection Sort](This-is-Coding-Test-Book/Sorting/Selection-Sort.py)
   - [Insertion Sort](This-is-Coding-Test-Book/Sorting/Insertion-Sort.py)
