@@ -72,15 +72,16 @@ find_flag = False
 # 빈 공간에서 3개 위치 뽑기 -> 장애물 설치 시뮬레이션
 for case in combinations(empty, 3):
     # 각 경우 시뮬레이션 시작 -> 감시 피할 수 있으면 True, 없으면 False
+    # put Obstacle
     for x, y in case:
         graph[x][y] = 'O'
 
-    # 학생 안보이면 True
+    # Check the case - if not student: YES!!
     if simulation():
-        print(graph)
         find_flag = True
         break
 
+    # remove Obstacle
     for x, y in case:
         graph[x][y] = 'X'
 

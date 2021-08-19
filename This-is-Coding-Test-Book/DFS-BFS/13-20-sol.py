@@ -1,9 +1,9 @@
 from itertools import combinations
 
-n = int(input()) # 복도의 크기
-board = [] # 복도 정보 (N x N)
-teachers = [] # 모든 선생님 위치 정보
-spaces = [] # 모든 빈 공간 위치 정보
+n = int(input())    # 복도의 크기
+board = []      # 복도 정보 (N x N)
+teachers = []   # 모든 선생님 위치 정보
+spaces = []     # 모든 빈 공간 위치 정보
 
 for i in range(n):
     board.append(list(input().split()))
@@ -14,6 +14,7 @@ for i in range(n):
         # 장애물을 설치할 수 있는 (빈 공간) 위치 저장
         if board[i][j] == 'X':
             spaces.append((i, j))
+
 
 # 특정 방향으로 감시를 진행 (학생 발견: True, 학생 미발견: False)
 def watch(x, y, direction):
@@ -51,6 +52,7 @@ def watch(x, y, direction):
             x += 1
     return False
 
+
 # 장애물 설치 이후에, 한 명이라도 학생이 감지되는지 검사
 def process():
     # 모든 선생의 위치를 하나씩 확인
@@ -61,7 +63,8 @@ def process():
                 return True
     return False
 
-find = False # 학생이 한 명도 감지되지 않도록 설치할 수 있는지의 여부
+
+find = False    # 학생이 한 명도 감지되지 않도록 설치할 수 있는지의 여부
 
 # 빈 공간에서 3개를 뽑는 모든 조합을 확인
 for data in combinations(spaces, 3):
