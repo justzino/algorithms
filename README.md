@@ -3,9 +3,9 @@
 #### 쉬운 것도 무시하지 말고 기본부터 다시 쌓아 올리자.
 
 ## 문자열 정리
-### [String](String.md) - 아스키코드 변환, 진법 변환, string Method
-### [정규표현식 정리](Regular-Expression.md)
-### [KMP 알고리즘](KMP.py)
+### [String](String/String.md) - 아스키코드 변환, 진법 변환, string Method
+### [정규표현식 정리](String/Regular-Expression.md)
+### [KMP 알고리즘](String/KMP.py)
 
 ## 자료구조 정리
 
