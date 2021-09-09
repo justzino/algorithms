@@ -6,6 +6,7 @@
 ### [String](String/String.md) - 아스키코드 변환, 진법 변환, string Method
 ### [정규표현식 정리](String/Regular-Expression.md)
 ### [KMP 알고리즘](String/KMP.py)
+### [Trie Tree](String/trie.py) - 문자열을 검색하는 문제에서 입력되는 문자열이 많을 경우 자주 사용
 
 ## 자료구조 정리
 
