@@ -27,6 +27,9 @@
 - [✅ 진법 다루기](math/Numeral-System.md)
 - [✅ 시간 복잡도](DataStructure/Time-Complexity.md)
 - [✅ 재귀 함수 depth](in&out/Recursion.md)
+
+- ✅ 자주 쓰이는 알고리즘
+  - [BIT(Binary Indexed Tree; 펜윅 트리)](Fenwick-Tree.py) - 값이 변할 때 구간합(누적합) 문제
    
 - ✅ 구현하기
   - [좌표 및 방향 구현 예시1 - dx, dy로](This-is-Coding-Test-Book/Implementation/4-1.py)  
