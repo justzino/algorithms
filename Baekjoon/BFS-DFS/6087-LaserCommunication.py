@@ -1,57 +1,61 @@
 import sys
+from collections import deque
 input = sys.stdin.readline
 sys.setrecursionlimit(10000)
 move = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 
-def dfs(loc, direction, count, start=False):
-    global answer
-    x, y = loc
-    visited[x][y] = True
+def bfs(start, end):
+    x, y = start
+    q = deque([(x, y, 0), (x, y, 1), (x, y, 2), (x, y, 3)])     # (x, y, 방향)
+    cost[x][y] = 0
 
-    for i in range(4):
-        n_direction = (direction + i) % 4
-        dx, dy = move[n_direction]
-        nx = x + dx
-        ny = y + dy
+    while q:
+        x, y, direction = q.popleft()
+        for d in range(4):
+            new_d = (direction + d) % 4
+            nx = x + move[new_d][0]
+            ny = y + move[new_d][1]
 
-        if nx < 0 or ny < 0 or nx >= N or ny >= M:
-            continue
-        if visited[nx][ny]:
-            continue
-        # 도착한 경우
-        if array[nx][ny] == 'C':
-            if i == 0:
-                answer = min(answer, count)
-                return
+            if nx < 0 or ny < 0 or nx >= N or ny >= M:      # array 벗어난 경우
+                continue
+            if array[nx][ny] == '*':        # 벽인 경우
+                continue
+
+            # 같은 방향이면 cost 추가 x
+            if direction == new_d:
+                # 목적지 도착한 겨우
+                # if nx == end[0] and ny == end[1]:
+                #     cost[nx][ny] = min(cost[nx][ny], cost[x][y])
+                #     break
+
+                # cost 변경 되면 q에 추가
+                if cost[x][y] <= cost[nx][ny]:
+                    cost[nx][ny] = cost[x][y]
+                    q.append((nx, ny, new_d))
+
+            # 다른 방향이면 cost + 1
             else:
-                answer = min(answer, count+1)
-                return
-        if array[nx][ny] == '*':
-            continue
-        if start:
-            dfs((nx, ny), n_direction, count)
-            visited[nx][ny] = False  # 갔던길 돌아와서 방문 안한 처리 하기
-        elif i == 0:
-            dfs((nx, ny), n_direction, count)
-            visited[nx][ny] = False     # 갔던길 돌아와서 방문 안한 처리 하기
-        else:
-            dfs((nx, ny), n_direction, count+1)
-            visited[nx][ny] = False     # 갔던길 돌아와서 방문 안한 처리 하기
+                # 목적지 도착한 겨우
+                # if nx == end[0] and ny == end[1]:
+                #     cost[nx][ny] = min(cost[nx][ny], cost[x][y]+1)
+                #     break
+                # cost 변경 되면 q에 추가
+                if cost[x][y] + 1 <= cost[nx][ny]:
+                    cost[nx][ny] = cost[x][y] + 1
+                    q.append((nx, ny, new_d))
 
 
 # main
-"""
-갈 수 있는 모든 경로 검색 -> 방향 전환 가장 적은 경로 선택 -> 거울 출력
-"""
 M, N = map(int, input().split())    # N, M이 반대로 들어오는 거 주의
 array = []
-visited = [[False] * M for _ in range(N)]
+MAX = int(1e9)
+cost = [[MAX] * M for _ in range(N)]
 targets = []
-answer = int(1e9)
+answer = MAX
 
 for i in range(N):
-    array.append(list(input()))
+    array.append(list(input().rstrip()))
     for j in range(M):
         if array[i][j] == 'C':
             targets.append((i, j))
@@ -59,5 +63,27 @@ for i in range(N):
 start, end = targets
 
 # 경로 탐색
-dfs(start, 0, 0, start=True)
-print(answer)
+bfs(start, end)
+print(cost[end[0]][end[1]])
+
+"""
+5 5
+C..**
+.*.**
+.*...
+.***C
+.....
+
+>>> 2
+
+
+4 6
+.C..
+....
+....
+**.*
+....
+...C
+
+>>> 2
+"""
