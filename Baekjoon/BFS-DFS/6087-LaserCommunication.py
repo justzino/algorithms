@@ -24,11 +24,6 @@ def bfs(start, end):
 
             # 같은 방향이면 cost 추가 x
             if direction == new_d:
-                # 목적지 도착한 겨우
-                # if nx == end[0] and ny == end[1]:
-                #     cost[nx][ny] = min(cost[nx][ny], cost[x][y])
-                #     break
-
                 # cost 변경 되면 q에 추가
                 if cost[x][y] <= cost[nx][ny]:
                     cost[nx][ny] = cost[x][y]
@@ -36,10 +31,6 @@ def bfs(start, end):
 
             # 다른 방향이면 cost + 1
             else:
-                # 목적지 도착한 겨우
-                # if nx == end[0] and ny == end[1]:
-                #     cost[nx][ny] = min(cost[nx][ny], cost[x][y]+1)
-                #     break
                 # cost 변경 되면 q에 추가
                 if cost[x][y] + 1 <= cost[nx][ny]:
                     cost[nx][ny] = cost[x][y] + 1
