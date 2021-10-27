@@ -2,7 +2,6 @@ import sys
 input = sys.stdin.readline
 
 T = int(input())
-INF = 10001
 
 for _ in range(T):
     N = int(input())
@@ -14,6 +13,6 @@ for _ in range(T):
 
     for j in range(2, N+1):
         for i in range(j-1, 0, -1):
-            values = [dp[i][k] + dp[k+1][j] + sums[j]-sums[i-1] for k in range(i, j)]
-            dp[i][j] = min(values)
+            values = [dp[i][k] + dp[k+1][j]for k in range(i, j)]
+            dp[i][j] = min(values) + sums[j]-sums[i-1]
     print(dp[1][N])
